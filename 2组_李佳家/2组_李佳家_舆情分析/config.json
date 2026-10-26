@@ -1,0 +1,57 @@
+{
+  "system": {
+    "platform_name": "舆情分析平台",
+    "version": "1.0.0",
+    "host": "127.0.0.1",
+    "port": 8714,
+    "timezone": "Asia/Shanghai",
+    "auto_start_system": true,
+    "auto_start_apps": [],
+    "data_retention_days": 30,
+    "max_concurrent_tasks": 4
+  },
+  "collection": {
+    "default_source_types": [
+      "news",
+      "image",
+      "video",
+      "forum_post",
+      "internal_data"
+    ],
+    "max_sources_per_search": 60,
+    "multimedia_types": [
+      "image",
+      "video"
+    ],
+    "forum_interval_min_seconds": 1.5,
+    "forum_interval_max_seconds": 3.0,
+    "forum_keywords": [
+      "预制菜",
+      "校园餐",
+      "家长投诉",
+      "供餐企业",
+      "食品安全"
+    ],
+    "forum_batch_size": 4,
+    "retry_times": 2,
+    "timeout_seconds": 10
+  },
+  "runtime": {
+    "log_tail_lines": 200,
+    "poll_interval_ms": 3000,
+    "ws_reconnect_ms": 2500,
+    "graph_layout": "force",
+    "graph_max_nodes": 80,
+    "require_apps_running": true,
+    "auto_start_apps_for_task": true,
+    "report_retention_days": 30,
+    "demo_query": "预制菜进校园"
+  },
+  "apps": {
+    "topic_search": true,
+    "multimedia_search": true,
+    "insight_analysis": true,
+    "forum_collector": true,
+    "report_writer": true
+  }
+}

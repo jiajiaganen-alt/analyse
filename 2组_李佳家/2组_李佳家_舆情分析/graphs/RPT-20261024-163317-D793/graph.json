@@ -1,0 +1,2028 @@
+{
+  "report_id": "RPT-20261024-163317-D793",
+  "topic": "预制菜进校园",
+  "created_at": "2026-10-24T16:33:17+08:00",
+  "generator": "graph-agent/1.0",
+  "layout": "layered",
+  "nodes": [
+    {
+      "id": "TOPIC",
+      "label": "预制菜进校园",
+      "type": "topic",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "description": "近期，多地家长在社交平台反映学校午餐使用复热即食类预制菜，与校方“现做现供”的说法不符，引发对校园餐供应链、标签公示和家长知情权的集中讨论。事件从本地家长论坛的一条配图帖起步，经短视频探店、主流媒体调查和监管部门回应逐步升级，形成“家长质疑—媒体追问—监管表态—制度修补”的完整舆情链路。",
+      "meta": {
+        "category": "食品安全",
+        "report_id": "RPT-20261024-163317-D793"
+      },
+      "degree": 37,
+      "type_label": "主题"
+    },
+    {
+      "id": "E01",
+      "label": "家长论坛首曝“料理包午餐”",
+      "type": "event",
+      "source_refs": [
+        "S05",
+        "S19"
+      ],
+      "description": "家长在本地论坛发布配餐包装照片，标签显示“复热即食”，两天内回复近 400 条，成为本轮舆情起点。",
+      "meta": {
+        "time": "2026-09-25T20:33:17+08:00",
+        "datetime_label": "2026-09-25 20:33",
+        "importance": "high",
+        "entity_ids": [
+          "ORG08"
+        ]
+      },
+      "degree": 2,
+      "type_label": "事件"
+    },
+    {
+      "id": "E02",
+      "label": "短视频探访中央厨房播放量破千万",
+      "type": "event",
+      "source_refs": [
+        "S09",
+        "S29"
+      ],
+      "description": "博主以第一视角拍摄中央厨房净菜与配送流程，视频播放量达 1200 万，评论区围绕“净菜还是料理包”激烈争论。",
+      "meta": {
+        "time": "2026-09-27T14:33:17+08:00",
+        "datetime_label": "2026-09-27 14:33",
+        "importance": "high",
+        "entity_ids": [
+          "ORG09",
+          "MED04"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "E03",
+      "label": "市教育局明确“严禁预制菜”",
+      "type": "event",
+      "source_refs": [
+        "S18",
+        "S33"
+      ],
+      "description": "市教育局通报允许中央厨房配送净菜、严禁复热即食类预制菜肴，要求全市学校一周内完成自查。",
+      "meta": {
+        "time": "2026-09-29T18:33:17+08:00",
+        "datetime_label": "2026-09-29 18:33",
+        "importance": "high",
+        "entity_ids": [
+          "ORG04",
+          "ORG08"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "E04",
+      "label": "省教育厅部署一个月专项检查",
+      "type": "event",
+      "source_refs": [
+        "S32",
+        "S06"
+      ],
+      "description": "专项检查覆盖全省中小学、幼儿园及校外供餐单位，重点核查供应商资质、留样制度与明厨亮灶运行情况。",
+      "meta": {
+        "time": "2026-10-02T16:33:17+08:00",
+        "datetime_label": "2026-10-02 16:33",
+        "importance": "medium",
+        "entity_ids": [
+          "ORG03",
+          "ORG04",
+          "ORG02"
+        ]
+      },
+      "degree": 4,
+      "type_label": "事件"
+    },
+    {
+      "id": "E05",
+      "label": "家委会联名提出五项诉求",
+      "type": "event",
+      "source_refs": [
+        "S04",
+        "S23"
+      ],
+      "description": "三年级家委会发布联名信，要求公开供应商、公示合同、每月检测、家长陪餐和建立听证机制，236 位家长签名。",
+      "meta": {
+        "time": "2026-10-04T16:33:17+08:00",
+        "datetime_label": "2026-10-04 16:33",
+        "importance": "high",
+        "entity_ids": [
+          "PER02",
+          "ORG08"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "E06",
+      "label": "教育部表态“不宜推广进校园”",
+      "type": "event",
+      "source_refs": [
+        "S02",
+        "S01",
+        "S03"
+      ],
+      "description": "教育部相关负责人表示预制菜尚无统一国家标准，对进校园应持审慎态度、不宜推广，话题声量 6 小时内增长 4.8 倍。",
+      "meta": {
+        "time": "2026-10-14T16:33:17+08:00",
+        "datetime_label": "2026-10-14 16:33",
+        "importance": "high",
+        "entity_ids": [
+          "ORG01",
+          "PER01"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "E07",
+      "label": "抽检结果公布：合格率 98.6%",
+      "type": "event",
+      "source_refs": [
+        "S11",
+        "S30",
+        "S27"
+      ],
+      "description": "市疾控中心公布 156 批次抽检结果，微生物指标全部合格，2 批次预包装原料标签标识不合规并已下架。",
+      "meta": {
+        "time": "2026-10-19T16:33:17+08:00",
+        "datetime_label": "2026-10-19 16:33",
+        "importance": "medium",
+        "entity_ids": [
+          "ORG05",
+          "ORG09"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "E08",
+      "label": "省教育厅建立陪餐与公示制度",
+      "type": "event",
+      "source_refs": [
+        "S16",
+        "S22"
+      ],
+      "description": "省教育厅要求各校建立家长陪餐预约、供应商信息公示、检测报告月度公开三项制度，并纳入年度考核。",
+      "meta": {
+        "time": "2026-10-23T10:33:17+08:00",
+        "datetime_label": "2026-10-23 10:33",
+        "importance": "high",
+        "entity_ids": [
+          "ORG03",
+          "ORG04"
+        ]
+      },
+      "degree": 3,
+      "type_label": "事件"
+    },
+    {
+      "id": "ORG01",
+      "label": "教育部",
+      "type": "org",
+      "source_refs": [
+        "S02",
+        "S16"
+      ],
+      "description": "国家教育主管部门，本轮舆情中明确对预制菜进校园持审慎态度。",
+      "meta": {
+        "source_ids": [
+          "N02",
+          "N13"
+        ]
+      },
+      "degree": 4,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG02",
+      "label": "国家市场监督管理总局",
+      "type": "org",
+      "source_refs": [
+        "S08",
+        "S11"
+      ],
+      "description": "校园食品安全与食品标签标识的监管部门，部署秋季专项检查。",
+      "meta": {
+        "source_ids": [
+          "N01",
+          "N09"
+        ]
+      },
+      "degree": 4,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG03",
+      "label": "某省教育厅",
+      "type": "org",
+      "source_refs": [
+        "S32",
+        "S16"
+      ],
+      "description": "省级教育主管部门，部署专项检查并建立陪餐与公示制度。",
+      "meta": {
+        "source_ids": [
+          "N04",
+          "N13"
+        ]
+      },
+      "degree": 4,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG04",
+      "label": "某市教育局",
+      "type": "org",
+      "source_refs": [
+        "S18",
+        "S22"
+      ],
+      "description": "属地教育主管部门，明确严禁复热预制菜并要求学校自查。",
+      "meta": {
+        "source_ids": [
+          "N03",
+          "N07"
+        ]
+      },
+      "degree": 5,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG05",
+      "label": "市疾病预防控制中心",
+      "type": "org",
+      "source_refs": [
+        "S11",
+        "S30",
+        "S27"
+      ],
+      "description": "承担校园餐抽检与学生不适事件检测的公共卫生机构。",
+      "meta": {
+        "source_ids": [
+          "N09",
+          "I05",
+          "D05"
+        ]
+      },
+      "degree": 3,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG06",
+      "label": "中国营养学会",
+      "type": "org",
+      "source_refs": [
+        "S15",
+        "S40"
+      ],
+      "description": "营养专业学术组织，专家从营养结构角度评价校园餐。",
+      "meta": {
+        "source_ids": [
+          "N08",
+          "V06"
+        ]
+      },
+      "degree": 2,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG07",
+      "label": "中国烹饪协会",
+      "type": "org",
+      "source_refs": [
+        "S39"
+      ],
+      "description": "行业协会，牵头起草校园餐应用团体标准并公开征求意见。",
+      "meta": {
+        "source_ids": [
+          "N10"
+        ]
+      },
+      "degree": 1,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG08",
+      "label": "阳光小学",
+      "type": "org",
+      "source_refs": [
+        "S22",
+        "S46",
+        "S48"
+      ],
+      "description": "本轮舆情中被家长集中讨论的学校，已开放陪餐与公示。",
+      "meta": {
+        "source_ids": [
+          "N07",
+          "I02",
+          "F08"
+        ]
+      },
+      "degree": 6,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG09",
+      "label": "绿源餐饮集团",
+      "type": "org",
+      "source_refs": [
+        "S28",
+        "S43",
+        "S31"
+      ],
+      "description": "本市主要校园餐供餐企业，服务 31 所学校，开放中央厨房接受监督。",
+      "meta": {
+        "source_ids": [
+          "N06",
+          "I03",
+          "D04"
+        ]
+      },
+      "degree": 7,
+      "type_label": "机构"
+    },
+    {
+      "id": "ORG10",
+      "label": "鲜达供应链有限公司",
+      "type": "org",
+      "source_refs": [
+        "S31"
+      ],
+      "description": "另一家校园餐供餐企业，覆盖 12 所学校，运营鲜达中央厨房。",
+      "meta": {
+        "source_ids": [
+          "D04"
+        ]
+      },
+      "degree": 1,
+      "type_label": "机构"
+    },
+    {
+      "id": "PER01",
+      "label": "教育部体卫艺司负责人",
+      "type": "person",
+      "source_refs": [
+        "S02"
+      ],
+      "description": "在新闻发布会上就预制菜进校园作出“不宜推广”表态。",
+      "meta": {
+        "source_ids": [
+          "N02"
+        ]
+      },
+      "degree": 3,
+      "type_label": "人物"
+    },
+    {
+      "id": "PER02",
+      "label": "家长代表李女士",
+      "type": "person",
+      "source_refs": [
+        "S04",
+        "S23"
+      ],
+      "description": "三年级家委会成员，联名信发起人之一，要求公开供应商与检测报告。",
+      "meta": {
+        "source_ids": [
+          "F03",
+          "I08"
+        ]
+      },
+      "degree": 3,
+      "type_label": "人物"
+    },
+    {
+      "id": "PER03",
+      "label": "食品安全专家王建国",
+      "type": "person",
+      "source_refs": [
+        "S15",
+        "S21"
+      ],
+      "description": "参与专家访谈，主张区分净菜与预制菜并建立校园餐负面清单。",
+      "meta": {
+        "source_ids": [
+          "N08",
+          "V07"
+        ]
+      },
+      "degree": 2,
+      "type_label": "人物"
+    },
+    {
+      "id": "PER04",
+      "label": "阳光小学校长张敏",
+      "type": "person",
+      "source_refs": [
+        "S22",
+        "S45"
+      ],
+      "description": "承诺每周公示菜单与检测结果，开放家长陪餐预约。",
+      "meta": {
+        "source_ids": [
+          "N07",
+          "V08"
+        ]
+      },
+      "degree": 1,
+      "type_label": "人物"
+    },
+    {
+      "id": "PER05",
+      "label": "绿源餐饮品控总监陈立",
+      "type": "person",
+      "source_refs": [
+        "S28"
+      ],
+      "description": "在开放日介绍净菜加工与批次追溯流程，回应“料理包”质疑。",
+      "meta": {
+        "source_ids": [
+          "N06"
+        ]
+      },
+      "degree": 1,
+      "type_label": "人物"
+    },
+    {
+      "id": "BR01",
+      "label": "校园优厨",
+      "type": "brand",
+      "source_refs": [
+        "S28",
+        "S43",
+        "S31"
+      ],
+      "description": "绿源餐饮旗下校园餐品牌，覆盖本市 31 所学校。",
+      "meta": {
+        "source_ids": [
+          "N06",
+          "I03",
+          "D04"
+        ]
+      },
+      "degree": 2,
+      "type_label": "品牌/产品"
+    },
+    {
+      "id": "BR02",
+      "label": "鲜达中央厨房",
+      "type": "brand",
+      "source_refs": [
+        "S31"
+      ],
+      "description": "鲜达供应链旗下中央厨房品牌，服务 12 所学校。",
+      "meta": {
+        "source_ids": [
+          "D04"
+        ]
+      },
+      "degree": 2,
+      "type_label": "品牌/产品"
+    },
+    {
+      "id": "MED01",
+      "label": "央视新闻",
+      "type": "media",
+      "source_refs": [
+        "S01",
+        "S07"
+      ],
+      "description": "播出 30 分钟新闻调查，推动议题进入监管问责阶段。",
+      "meta": {
+        "source_ids": [
+          "V01",
+          "N11"
+        ]
+      },
+      "degree": 5,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED02",
+      "label": "人民网",
+      "type": "media",
+      "source_refs": [
+        "S22",
+        "S35"
+      ],
+      "description": "报道家长开放日并发布舆情观察，关注信任修复。",
+      "meta": {
+        "source_ids": [
+          "N07",
+          "I04"
+        ]
+      },
+      "degree": 1,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED03",
+      "label": "澎湃新闻",
+      "type": "media",
+      "source_refs": [
+        "S06",
+        "S21"
+      ],
+      "description": "实地调查学校公示信息缺失，并组织专家访谈。",
+      "meta": {
+        "source_ids": [
+          "N05",
+          "V07"
+        ]
+      },
+      "degree": 3,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED04",
+      "label": "抖音",
+      "type": "media",
+      "source_refs": [
+        "S09",
+        "S29",
+        "S14"
+      ],
+      "description": "短视频主阵地，头部探店与学生不适视频均首发于此。",
+      "meta": {
+        "source_ids": [
+          "V02",
+          "I06",
+          "V05"
+        ]
+      },
+      "degree": 6,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED05",
+      "label": "微博",
+      "type": "media",
+      "source_refs": [
+        "S03"
+      ],
+      "description": "话题聚合平台，#预制菜进校园# 阅读量达 3.2 亿。",
+      "meta": {
+        "source_ids": [
+          "F06"
+        ]
+      },
+      "degree": 3,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED06",
+      "label": "小红书",
+      "type": "media",
+      "source_refs": [
+        "S42",
+        "S44"
+      ],
+      "description": "家长陪餐记录与菜品实拍的分享平台，情绪相对温和。",
+      "meta": {
+        "source_ids": [
+          "F07",
+          "I07"
+        ]
+      },
+      "degree": 1,
+      "type_label": "媒体"
+    },
+    {
+      "id": "MED07",
+      "label": "城市家长论坛",
+      "type": "media",
+      "source_refs": [
+        "S05",
+        "S04",
+        "S48"
+      ],
+      "description": "本地家长聚集的论坛，本轮舆情的首发与组织化动员平台。",
+      "meta": {
+        "source_ids": [
+          "F01",
+          "F03",
+          "F08"
+        ]
+      },
+      "degree": 6,
+      "type_label": "媒体"
+    },
+    {
+      "id": "SRC-V01",
+      "label": "央视新闻调查：预制菜如何进入校园餐桌",
+      "type": "source",
+      "source_refs": [
+        "S01"
+      ],
+      "description": "30分钟调查片走访学校、供餐企业和监管部门，指出部分学校采购环节存在标签公示缺失、家长知情不足等问题，播出后登上热搜。",
+      "meta": {
+        "source_id": "V01",
+        "source_type": "video",
+        "source_type_label": "视频内容",
+        "source": "央视新闻",
+        "published_at": "2026-10-14T16:33:17+08:00",
+        "published_label": "2026-10-14 16:33",
+        "sentiment": "negative",
+        "url": "https://tv.cctv.com/2026/10/14/VIDE00120261014.shtml",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N02",
+      "label": "教育部：预制菜不宜推广进校园 应审慎对待",
+      "type": "source",
+      "source_refs": [
+        "S02"
+      ],
+      "description": "教育部相关负责人在新闻发布会上表示，鉴于预制菜尚无统一国家标准，不宜推广进校园，各地可结合实际制定管理细则。",
+      "meta": {
+        "source_id": "N02",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "中国教育报",
+        "published_at": "2026-10-15T16:33:17+08:00",
+        "published_label": "2026-10-15 16:33",
+        "sentiment": "positive",
+        "url": "https://www.jyb.cn/rmtzgjyb/202610/t20261015_02.html",
+        "author_role": "监管部门"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-F06",
+      "label": "微博话题#预制菜进校园#阅读量3.2亿",
+      "type": "source",
+      "source_refs": [
+        "S03"
+      ],
+      "description": "话题在教育部表态后达到峰值，单小时讨论量12万条，情绪词云以“焦虑”“抵制”“公示”为主。",
+      "meta": {
+        "source_id": "F06",
+        "source_type": "forum_post",
+        "source_type_label": "论坛帖子",
+        "source": "微博",
+        "published_at": "2026-10-15T02:33:17+08:00",
+        "published_label": "2026-10-15 02:33",
+        "sentiment": "negative",
+        "url": "https://s.weibo.com/weibo?q=%23%E9%A2%84%E5%88%B6%E8%8F%9C%E8%BF%9B%E6%A0%A1%E5%9B%AD%23",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-F03",
+      "label": "家委会联名信：要求公开供餐企业和检测报告",
+      "type": "source",
+      "source_refs": [
+        "S04"
+      ],
+      "description": "联名信提出五项诉求：公开供应商、公示合同、每月检测、家长陪餐、建立听证机制，已有236位家长签名。",
+      "meta": {
+        "source_id": "F03",
+        "source_type": "forum_post",
+        "source_type_label": "论坛帖子",
+        "source": "城市家长论坛",
+        "published_at": "2026-10-04T16:33:17+08:00",
+        "published_label": "2026-10-04 16:33",
+        "sentiment": "negative",
+        "url": "https://bbs.city-parent.cn/thread/20261006/1421.html",
+        "author_role": "家长"
+      },
+      "degree": 4,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-F01",
+      "label": "孩子说午餐是“料理包”，有图有真相",
+      "type": "source",
+      "source_refs": [
+        "S05"
+      ],
+      "description": "帖子称孩子连续三天午餐为复热菜肴，附包装照片和菜单对比，两天内回复近400条，成为本地舆情起点。",
+      "meta": {
+        "source_id": "F01",
+        "source_type": "forum_post",
+        "source_type_label": "论坛帖子",
+        "source": "城市家长论坛",
+        "published_at": "2026-09-25T20:33:17+08:00",
+        "published_label": "2026-09-25 20:33",
+        "sentiment": "negative",
+        "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+        "author_role": "家长"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N05",
+      "label": "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+      "type": "source",
+      "source_refs": [
+        "S06"
+      ],
+      "description": "记者走访发现，三所学校公示栏仅展示菜单，未公示供餐企业名称、食品经营许可证和近期检测报告，家长难以核验。",
+      "meta": {
+        "source_id": "N05",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "澎湃新闻",
+        "published_at": "2026-10-05T16:33:17+08:00",
+        "published_label": "2026-10-05 16:33",
+        "sentiment": "negative",
+        "url": "https://www.thepaper.cn/newsDetail_forward_29088112",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N11",
+      "label": "多地推行“明厨亮灶” 家长扫码可看后厨直播",
+      "type": "source",
+      "source_refs": [
+        "S07"
+      ],
+      "description": "多地学校后厨接入视频平台，家长扫码即可查看加工过程，部分地区还将AI识别未戴口罩、鼠患等风险并自动告警。",
+      "meta": {
+        "source_id": "N11",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "央视新闻",
+        "published_at": "2026-10-21T16:33:17+08:00",
+        "published_label": "2026-10-21 16:33",
+        "sentiment": "positive",
+        "url": "https://news.cctv.com/2026/10/22/ARTI20261022SX001.shtml",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N01",
+      "label": "市场监管总局部署秋季校园食品安全专项检查 严把原料…",
+      "type": "source",
+      "source_refs": [
+        "S08"
+      ],
+      "description": "总局要求各地以学校食堂、校外供餐单位为重点，严查原料采购、加工制作和标签标识，对使用预制菜原料的要如实公示。",
+      "meta": {
+        "source_id": "N01",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "国家市场监督管理总局",
+        "published_at": "2026-10-24T10:03:17+08:00",
+        "published_label": "2026-10-24 10:03",
+        "sentiment": "neutral",
+        "url": "https://www.samr.gov.cn/xw/zj/202610/t20261024_01.html",
+        "author_role": "监管部门"
+      },
+      "degree": 2,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-D01",
+      "label": "12345工单汇总：校园餐相关投诉87件",
+      "type": "source",
+      "source_refs": [
+        "S12"
+      ],
+      "description": "近两周受理校园餐类工单87件，其中预制菜质疑29件、菜品质量21件、价格18件、其他19件，办结率91%。",
+      "meta": {
+        "source_id": "D01",
+        "source_type": "internal_data",
+        "source_type_label": "内部数据",
+        "source": "12345政务热线",
+        "published_at": "2026-10-18T16:33:17+08:00",
+        "published_label": "2026-10-18 16:33",
+        "sentiment": "negative",
+        "url": "https://ops.yuqing.local/tickets/summary/20261020-01",
+        "author_role": "监管部门"
+      },
+      "degree": 1,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-I01",
+      "label": "家长群流传的配餐包装照片 标签标注“复热即食”",
+      "type": "source",
+      "source_refs": [
+        "S19"
+      ],
+      "description": "照片显示午餐包装背面标注“复热即食、加热15分钟”，与学校此前“现做现供”的说法不符，在多个家长群转发。",
+      "meta": {
+        "source_id": "I01",
+        "source_type": "image",
+        "source_type_label": "图片素材",
+        "source": "城市家长论坛",
+        "published_at": "2026-09-25T22:33:17+08:00",
+        "published_label": "2026-09-25 22:33",
+        "sentiment": "negative",
+        "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+        "author_role": "家长"
+      },
+      "degree": 2,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-V02",
+      "label": "抖音博主探访中央厨房 播放量破千万",
+      "type": "source",
+      "source_refs": [
+        "S09"
+      ],
+      "description": "博主以第一视角拍摄中央厨房净菜加工与配送，视频播放量1200万，评论区围绕“净菜还是料理包”激烈争论。",
+      "meta": {
+        "source_id": "V02",
+        "source_type": "video",
+        "source_type_label": "视频内容",
+        "source": "抖音",
+        "published_at": "2026-09-27T14:33:17+08:00",
+        "published_label": "2026-09-27 14:33",
+        "sentiment": "negative",
+        "url": "https://www.douyin.com/video/7410033882",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N12",
+      "label": "网传学生餐后不适 官方通报：未检出食源性致病因素",
+      "type": "source",
+      "source_refs": [
+        "S10"
+      ],
+      "description": "针对网传某小学多名学生餐后不适，疾控部门采集留样和病例样本，未检出致病菌，初步判断为季节性肠胃炎聚集，已排除食源性因素。",
+      "meta": {
+        "source_id": "N12",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "市卫生健康委员会",
+        "published_at": "2026-10-17T16:33:17+08:00",
+        "published_label": "2026-10-17 16:33",
+        "sentiment": "negative",
+        "url": "https://www.city.gov.cn/wsjkw/tzgg/202610/t20261018_12.html",
+        "author_role": "监管部门"
+      },
+      "degree": 1,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N09",
+      "label": "校园餐抽检结果公布：合格率98.6% 标签标识待规范",
+      "type": "source",
+      "source_refs": [
+        "S11"
+      ],
+      "description": "本轮抽检覆盖156批次校园餐原料及成品，微生物指标全部合格，2批次预包装原料存在生产日期标注不清问题，已责令下架。",
+      "meta": {
+        "source_id": "N09",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "市疾病预防控制中心",
+        "published_at": "2026-10-19T16:33:17+08:00",
+        "published_label": "2026-10-19 16:33",
+        "sentiment": "neutral",
+        "url": "https://www.cdc-city.gov.cn/xxgk/jc/202610/t20261020_09.html",
+        "author_role": "监管部门"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-F10",
+      "label": "家长维权群：已有236位家长接龙要求听证",
+      "type": "source",
+      "source_refs": [
+        "S13"
+      ],
+      "description": "群内接龙持续更新，家长计划向区教育局递交书面材料，并邀请律师提供信息公开申请指导。",
+      "meta": {
+        "source_id": "F10",
+        "source_type": "forum_post",
+        "source_type_label": "论坛帖子",
+        "source": "微信家长群",
+        "published_at": "2026-10-24T08:33:17+08:00",
+        "published_label": "2026-10-24 08:33",
+        "sentiment": "negative",
+        "url": "https://bbs.city-parent.cn/thread/20261024/1530.html",
+        "author_role": "家长"
+      },
+      "degree": 1,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-V05",
+      "label": "网传学生不适视频 校方公布监控与检测结果",
+      "type": "source",
+      "source_refs": [
+        "S14"
+      ],
+      "description": "视频称某小学多名学生呕吐，校方随后公布教室监控和疾控检测结果，说明为季节性肠胃炎，视频被平台标注“信息存疑”。",
+      "meta": {
+        "source_id": "V05",
+        "source_type": "video",
+        "source_type_label": "视频内容",
+        "source": "抖音",
+        "published_at": "2026-10-17T22:33:17+08:00",
+        "published_label": "2026-10-17 22:33",
+        "sentiment": "negative",
+        "url": "https://www.douyin.com/video/7415566210",
+        "author_role": "媒体"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N08",
+      "label": "专家解读：中央厨房净菜与预制菜不是一回事",
+      "type": "source",
+      "source_refs": [
+        "S15"
+      ],
+      "description": "食品安全专家指出，净菜是经清洗切配的生鲜原料，预制菜是经工业化预加工、需复热的成品或半成品，两者在监管口径上应区别对待。",
+      "meta": {
+        "source_id": "N08",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "中国新闻网",
+        "published_at": "2026-10-13T16:33:17+08:00",
+        "published_label": "2026-10-13 16:33",
+        "sentiment": "neutral",
+        "url": "https://www.chinanews.com.cn/sh/2026/10-17/10245678.shtml",
+        "author_role": "专家"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-N13",
+      "label": "省教育厅：建立家长陪餐和供应商公示制度",
+      "type": "source",
+      "source_refs": [
+        "S16"
+      ],
+      "description": "省教育厅要求全省学校建立家长陪餐预约、供应商信息公示、检测报告月度公开三项制度，并将落实情况纳入年度考核。",
+      "meta": {
+        "source_id": "N13",
+        "source_type": "news",
+        "source_type_label": "新闻媒体",
+        "source": "某省教育厅",
+        "published_at": "2026-10-23T10:33:17+08:00",
+        "published_label": "2026-10-23 10:33",
+        "sentiment": "positive",
+        "url": "https://www.xxedu.gov.cn/zwgk/tzgg/202610/t20261023_13.html",
+        "author_role": "监管部门"
+      },
+      "degree": 3,
+      "type_label": "来源"
+    },
+    {
+      "id": "SRC-D03",
+      "label": "内部舆情周报：话题传播峰值出现在教育部表态后",
+      "type": "source",
+      "source_refs": [
+        "S17"
+      ],
+      "description": "周报记录三个传播峰值：短视频探店、央视调查、教育部表态，其中教育部表态后6小时声量增长4.8倍。",
+      "meta": {
+        "source_id": "D03",
+        "source_type": "internal_data",
+        "source_type_label": "内部数据",
+        "source": "舆情监测中心",
+        "published_at": "2026-10-20T02:33:17+08:00",
+        "published_label": "2026-10-20 02:33",
+        "sentiment": "neutral",
+        "url": "https://ops.yuqing.local/reports/weekly/20261020-03",
+        "author_role": "内部"
+      },
+      "degree": 1,
+      "type_label": "来源"
+    }
+  ],
+  "edges": [
+    {
+      "id": "EDGE-001",
+      "source": "TOPIC",
+      "target": "E01",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S05",
+        "S19"
+      ]
+    },
+    {
+      "id": "EDGE-002",
+      "source": "TOPIC",
+      "target": "E02",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S09",
+        "S29"
+      ]
+    },
+    {
+      "id": "EDGE-003",
+      "source": "TOPIC",
+      "target": "E03",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S18",
+        "S33"
+      ]
+    },
+    {
+      "id": "EDGE-004",
+      "source": "TOPIC",
+      "target": "E04",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S32",
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-005",
+      "source": "TOPIC",
+      "target": "E05",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S04",
+        "S23"
+      ]
+    },
+    {
+      "id": "EDGE-006",
+      "source": "TOPIC",
+      "target": "E06",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S02",
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-007",
+      "source": "TOPIC",
+      "target": "E07",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S11",
+        "S30",
+        "S27"
+      ]
+    },
+    {
+      "id": "EDGE-008",
+      "source": "TOPIC",
+      "target": "E08",
+      "relation": "contains",
+      "label": "包含事件",
+      "source_refs": [
+        "S16",
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-009",
+      "source": "TOPIC",
+      "target": "MED01",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S01",
+        "S07"
+      ]
+    },
+    {
+      "id": "EDGE-010",
+      "source": "TOPIC",
+      "target": "MED02",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S22",
+        "S35"
+      ]
+    },
+    {
+      "id": "EDGE-011",
+      "source": "TOPIC",
+      "target": "MED03",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S06",
+        "S21"
+      ]
+    },
+    {
+      "id": "EDGE-012",
+      "source": "TOPIC",
+      "target": "MED04",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S09",
+        "S29",
+        "S14"
+      ]
+    },
+    {
+      "id": "EDGE-013",
+      "source": "TOPIC",
+      "target": "MED05",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-014",
+      "source": "TOPIC",
+      "target": "MED06",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S42",
+        "S44"
+      ]
+    },
+    {
+      "id": "EDGE-015",
+      "source": "TOPIC",
+      "target": "MED07",
+      "relation": "spread_by",
+      "label": "传播渠道",
+      "source_refs": [
+        "S05",
+        "S04",
+        "S48"
+      ]
+    },
+    {
+      "id": "EDGE-016",
+      "source": "SRC-V01",
+      "target": "TOPIC",
+      "relation": "covers",
+      "label": "视频报道",
+      "source_refs": [
+        "S01"
+      ]
+    },
+    {
+      "id": "EDGE-017",
+      "source": "SRC-V01",
+      "target": "MED01",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S01"
+      ]
+    },
+    {
+      "id": "EDGE-018",
+      "source": "SRC-N02",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S02"
+      ]
+    },
+    {
+      "id": "EDGE-019",
+      "source": "SRC-N02",
+      "target": "ORG01",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S02"
+      ]
+    },
+    {
+      "id": "EDGE-020",
+      "source": "SRC-N02",
+      "target": "PER01",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S02"
+      ]
+    },
+    {
+      "id": "EDGE-021",
+      "source": "SRC-F06",
+      "target": "TOPIC",
+      "relation": "discusses",
+      "label": "讨论",
+      "source_refs": [
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-022",
+      "source": "SRC-F06",
+      "target": "MED05",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-023",
+      "source": "SRC-F03",
+      "target": "TOPIC",
+      "relation": "discusses",
+      "label": "讨论",
+      "source_refs": [
+        "S04"
+      ]
+    },
+    {
+      "id": "EDGE-024",
+      "source": "SRC-F03",
+      "target": "PER02",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S04"
+      ]
+    },
+    {
+      "id": "EDGE-025",
+      "source": "SRC-F03",
+      "target": "MED07",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S04"
+      ]
+    },
+    {
+      "id": "EDGE-026",
+      "source": "SRC-F01",
+      "target": "TOPIC",
+      "relation": "discusses",
+      "label": "讨论",
+      "source_refs": [
+        "S05"
+      ]
+    },
+    {
+      "id": "EDGE-027",
+      "source": "SRC-F01",
+      "target": "MED07",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S05"
+      ]
+    },
+    {
+      "id": "EDGE-028",
+      "source": "SRC-N05",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-029",
+      "source": "SRC-N05",
+      "target": "MED03",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-030",
+      "source": "SRC-N11",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S07"
+      ]
+    },
+    {
+      "id": "EDGE-031",
+      "source": "SRC-N11",
+      "target": "MED01",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S07"
+      ]
+    },
+    {
+      "id": "EDGE-032",
+      "source": "SRC-N01",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S08"
+      ]
+    },
+    {
+      "id": "EDGE-033",
+      "source": "SRC-N01",
+      "target": "ORG02",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S08"
+      ]
+    },
+    {
+      "id": "EDGE-034",
+      "source": "SRC-D01",
+      "target": "TOPIC",
+      "relation": "supports",
+      "label": "内部佐证",
+      "source_refs": [
+        "S12"
+      ]
+    },
+    {
+      "id": "EDGE-035",
+      "source": "SRC-I01",
+      "target": "TOPIC",
+      "relation": "illustrates",
+      "label": "图像佐证",
+      "source_refs": [
+        "S19"
+      ]
+    },
+    {
+      "id": "EDGE-036",
+      "source": "SRC-V02",
+      "target": "TOPIC",
+      "relation": "covers",
+      "label": "视频报道",
+      "source_refs": [
+        "S09"
+      ]
+    },
+    {
+      "id": "EDGE-037",
+      "source": "SRC-V02",
+      "target": "MED04",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S09"
+      ]
+    },
+    {
+      "id": "EDGE-038",
+      "source": "SRC-N12",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S10"
+      ]
+    },
+    {
+      "id": "EDGE-039",
+      "source": "SRC-N09",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S11"
+      ]
+    },
+    {
+      "id": "EDGE-040",
+      "source": "SRC-N09",
+      "target": "ORG02",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S11"
+      ]
+    },
+    {
+      "id": "EDGE-041",
+      "source": "SRC-N09",
+      "target": "ORG05",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S11"
+      ]
+    },
+    {
+      "id": "EDGE-042",
+      "source": "SRC-F10",
+      "target": "TOPIC",
+      "relation": "discusses",
+      "label": "讨论",
+      "source_refs": [
+        "S13"
+      ]
+    },
+    {
+      "id": "EDGE-043",
+      "source": "SRC-V05",
+      "target": "TOPIC",
+      "relation": "covers",
+      "label": "视频报道",
+      "source_refs": [
+        "S14"
+      ]
+    },
+    {
+      "id": "EDGE-044",
+      "source": "SRC-V05",
+      "target": "MED04",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S14"
+      ]
+    },
+    {
+      "id": "EDGE-045",
+      "source": "SRC-N08",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "id": "EDGE-046",
+      "source": "SRC-N08",
+      "target": "ORG06",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "id": "EDGE-047",
+      "source": "SRC-N08",
+      "target": "PER03",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "id": "EDGE-048",
+      "source": "SRC-N13",
+      "target": "TOPIC",
+      "relation": "reports",
+      "label": "报道",
+      "source_refs": [
+        "S16"
+      ]
+    },
+    {
+      "id": "EDGE-049",
+      "source": "SRC-N13",
+      "target": "ORG01",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S16"
+      ]
+    },
+    {
+      "id": "EDGE-050",
+      "source": "SRC-N13",
+      "target": "ORG03",
+      "relation": "mentions",
+      "label": "提及",
+      "source_refs": [
+        "S16"
+      ]
+    },
+    {
+      "id": "EDGE-051",
+      "source": "SRC-D03",
+      "target": "TOPIC",
+      "relation": "supports",
+      "label": "内部佐证",
+      "source_refs": [
+        "S17"
+      ]
+    },
+    {
+      "id": "EDGE-052",
+      "source": "E01",
+      "target": "ORG08",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S05",
+        "S19"
+      ]
+    },
+    {
+      "id": "EDGE-053",
+      "source": "E02",
+      "target": "ORG09",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S09",
+        "S29"
+      ]
+    },
+    {
+      "id": "EDGE-054",
+      "source": "E02",
+      "target": "MED04",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S09",
+        "S29"
+      ]
+    },
+    {
+      "id": "EDGE-055",
+      "source": "E03",
+      "target": "ORG04",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S18",
+        "S33"
+      ]
+    },
+    {
+      "id": "EDGE-056",
+      "source": "E03",
+      "target": "ORG08",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S18",
+        "S33"
+      ]
+    },
+    {
+      "id": "EDGE-057",
+      "source": "E04",
+      "target": "ORG03",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S32",
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-058",
+      "source": "E04",
+      "target": "ORG04",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S32",
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-059",
+      "source": "E04",
+      "target": "ORG02",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S32",
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-060",
+      "source": "E05",
+      "target": "PER02",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S04",
+        "S23"
+      ]
+    },
+    {
+      "id": "EDGE-061",
+      "source": "E05",
+      "target": "ORG08",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S04",
+        "S23"
+      ]
+    },
+    {
+      "id": "EDGE-062",
+      "source": "E06",
+      "target": "ORG01",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S02",
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-063",
+      "source": "E06",
+      "target": "PER01",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S02",
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-064",
+      "source": "E07",
+      "target": "ORG05",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S11",
+        "S30",
+        "S27"
+      ]
+    },
+    {
+      "id": "EDGE-065",
+      "source": "E07",
+      "target": "ORG09",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S11",
+        "S30",
+        "S27"
+      ]
+    },
+    {
+      "id": "EDGE-066",
+      "source": "E08",
+      "target": "ORG03",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S16",
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-067",
+      "source": "E08",
+      "target": "ORG04",
+      "relation": "involves",
+      "label": "涉及",
+      "source_refs": [
+        "S16",
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-068",
+      "source": "MED01",
+      "target": "SRC-V01",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S01"
+      ]
+    },
+    {
+      "id": "EDGE-069",
+      "source": "MED05",
+      "target": "SRC-F06",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S03"
+      ]
+    },
+    {
+      "id": "EDGE-070",
+      "source": "MED07",
+      "target": "SRC-F03",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S04"
+      ]
+    },
+    {
+      "id": "EDGE-071",
+      "source": "MED07",
+      "target": "SRC-F01",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S05"
+      ]
+    },
+    {
+      "id": "EDGE-072",
+      "source": "MED03",
+      "target": "SRC-N05",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S06"
+      ]
+    },
+    {
+      "id": "EDGE-073",
+      "source": "MED01",
+      "target": "SRC-N11",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S07"
+      ]
+    },
+    {
+      "id": "EDGE-074",
+      "source": "MED07",
+      "target": "SRC-I01",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S19"
+      ]
+    },
+    {
+      "id": "EDGE-075",
+      "source": "MED04",
+      "target": "SRC-V02",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S09"
+      ]
+    },
+    {
+      "id": "EDGE-076",
+      "source": "MED04",
+      "target": "SRC-V05",
+      "relation": "published",
+      "label": "发布",
+      "source_refs": [
+        "S14"
+      ]
+    },
+    {
+      "id": "EDGE-077",
+      "source": "PER01",
+      "target": "ORG01",
+      "relation": "affiliated_with",
+      "label": "任职于",
+      "source_refs": [
+        "S02"
+      ]
+    },
+    {
+      "id": "EDGE-078",
+      "source": "PER03",
+      "target": "ORG06",
+      "relation": "affiliated_with",
+      "label": "任职于",
+      "source_refs": [
+        "S15"
+      ]
+    },
+    {
+      "id": "EDGE-079",
+      "source": "PER04",
+      "target": "ORG08",
+      "relation": "affiliated_with",
+      "label": "任职于",
+      "source_refs": [
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-080",
+      "source": "PER05",
+      "target": "ORG09",
+      "relation": "affiliated_with",
+      "label": "任职于",
+      "source_refs": [
+        "S28"
+      ]
+    },
+    {
+      "id": "EDGE-081",
+      "source": "PER02",
+      "target": "TOPIC",
+      "relation": "participates_in",
+      "label": "参与讨论",
+      "source_refs": [
+        "S04"
+      ]
+    },
+    {
+      "id": "EDGE-082",
+      "source": "BR01",
+      "target": "ORG09",
+      "relation": "operated_by",
+      "label": "隶属于",
+      "source_refs": [
+        "S28",
+        "S31"
+      ]
+    },
+    {
+      "id": "EDGE-083",
+      "source": "BR02",
+      "target": "ORG10",
+      "relation": "operated_by",
+      "label": "隶属于",
+      "source_refs": [
+        "S31"
+      ]
+    },
+    {
+      "id": "EDGE-084",
+      "source": "ORG02",
+      "target": "ORG09",
+      "relation": "regulates",
+      "label": "监管",
+      "source_refs": [
+        "S08",
+        "S11"
+      ]
+    },
+    {
+      "id": "EDGE-085",
+      "source": "ORG03",
+      "target": "ORG04",
+      "relation": "supervises",
+      "label": "业务指导",
+      "source_refs": [
+        "S32",
+        "S16"
+      ]
+    },
+    {
+      "id": "EDGE-086",
+      "source": "ORG04",
+      "target": "ORG08",
+      "relation": "administers",
+      "label": "主管",
+      "source_refs": [
+        "S18",
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-087",
+      "source": "ORG05",
+      "target": "ORG09",
+      "relation": "inspects",
+      "label": "抽检",
+      "source_refs": [
+        "S11",
+        "S27"
+      ]
+    },
+    {
+      "id": "EDGE-088",
+      "source": "ORG07",
+      "target": "TOPIC",
+      "relation": "standardizes",
+      "label": "制定团体标准",
+      "source_refs": [
+        "S39"
+      ]
+    },
+    {
+      "id": "EDGE-089",
+      "source": "ORG08",
+      "target": "ORG09",
+      "relation": "cooperates_with",
+      "label": "供餐合作",
+      "source_refs": [
+        "S28",
+        "S22"
+      ]
+    },
+    {
+      "id": "EDGE-090",
+      "source": "TOPIC",
+      "target": "BR01",
+      "relation": "related_brand",
+      "label": "关联品牌",
+      "source_refs": [
+        "S28",
+        "S43",
+        "S31"
+      ]
+    },
+    {
+      "id": "EDGE-091",
+      "source": "TOPIC",
+      "target": "BR02",
+      "relation": "related_brand",
+      "label": "关联品牌",
+      "source_refs": [
+        "S31"
+      ]
+    }
+  ],
+  "stats": {
+    "node_count": 51,
+    "edge_count": 91,
+    "type_counts": {
+      "topic": 1,
+      "brand": 2,
+      "event": 8,
+      "person": 5,
+      "org": 10,
+      "media": 7,
+      "source": 18
+    },
+    "relation_counts": {
+      "contains": 8,
+      "spread_by": 7,
+      "covers": 3,
+      "mentions": 18,
+      "reports": 8,
+      "discusses": 4,
+      "supports": 2,
+      "illustrates": 1,
+      "involves": 16,
+      "published": 9,
+      "affiliated_with": 4,
+      "participates_in": 1,
+      "operated_by": 2,
+      "regulates": 1,
+      "supervises": 1,
+      "administers": 1,
+      "inspects": 1,
+      "standardizes": 1,
+      "cooperates_with": 1,
+      "related_brand": 2
+    },
+    "source_node_count": 18,
+    "entity_count": 24,
+    "event_count": 8,
+    "top_node": {
+      "id": "TOPIC",
+      "label": "预制菜进校园",
+      "degree": 37
+    },
+    "evidence_citation": "[S01][S02][S03][S04][S05]"
+  }
+}

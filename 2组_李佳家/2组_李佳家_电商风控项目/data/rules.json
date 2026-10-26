@@ -1,0 +1,272 @@
+[
+  {
+    "rule_code": "R001",
+    "rule_name": "新账号高额交易",
+    "rule_status": "enabled",
+    "priority": 9,
+    "score": 25,
+    "condition_json": {"and": [{"field": "user_register_days", "op": "<", "value": 30}, {"field": "order_amount", "op": ">=", "value": 2000}]},
+    "description": "注册不足 30 天的账号产生 2000 元以上订单，存在盗号或套现风险。"
+  },
+  {
+    "rule_code": "R002",
+    "rule_name": "新账号短时高频下单",
+    "rule_status": "enabled",
+    "priority": 7,
+    "score": 18,
+    "condition_json": {"and": [{"field": "user_register_days", "op": "<=", "value": 15}, {"field": "user_order_cnt_30d", "op": ">=", "value": 5}]},
+    "description": "注册 15 天内近 30 天下单量达到 5 单，疑似批量养号或刷单。"
+  },
+  {
+    "rule_code": "R003",
+    "rule_name": "高频退款用户",
+    "rule_status": "enabled",
+    "priority": 8,
+    "score": 22,
+    "condition_json": {"field": "user_refund_cnt", "op": ">=", "value": 5},
+    "description": "历史退款次数达到 5 次，需关注恶意退款与运费险套利。"
+  },
+  {
+    "rule_code": "R004",
+    "rule_name": "退款率异常",
+    "rule_status": "enabled",
+    "priority": 8,
+    "score": 22,
+    "condition_json": {"and": [{"field": "user_refund_rate", "op": ">=", "value": 0.45}, {"field": "user_order_cnt_90d", "op": ">=", "value": 4}]},
+    "description": "近 90 天订单不少于 4 单且退款率超过 45%，属于异常售后行为。"
+  },
+  {
+    "rule_code": "R005",
+    "rule_name": "投诉频繁用户",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 16,
+    "condition_json": {"field": "user_complaint_cnt", "op": ">=", "value": 3},
+    "description": "累计投诉达到 3 次，可能存在职业索赔倾向。"
+  },
+  {
+    "rule_code": "R006",
+    "rule_name": "多设备登录",
+    "rule_status": "enabled",
+    "priority": 5,
+    "score": 14,
+    "condition_json": {"field": "user_device_cnt", "op": ">=", "value": 4},
+    "description": "账号关联 4 台及以上设备，存在团伙共用账号风险。"
+  },
+  {
+    "rule_code": "R007",
+    "rule_name": "历史高风险用户",
+    "rule_status": "enabled",
+    "priority": 8,
+    "score": 20,
+    "condition_json": {"field": "user_high_risk_cnt", "op": ">=", "value": 2},
+    "description": "用户历史评估中已出现 2 次及以上高风险结论。"
+  },
+  {
+    "rule_code": "R008",
+    "rule_name": "多登录地异常",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 12,
+    "condition_json": {"field": "user_login_city_cnt", "op": ">=", "value": 4},
+    "description": "近 90 天登录城市达到 4 个，存在账号共享或异地盗用风险。"
+  },
+  {
+    "rule_code": "R009",
+    "rule_name": "收货地址过多",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 10,
+    "condition_json": {"field": "user_address_cnt", "op": ">=", "value": 6},
+    "description": "账号维护 6 个以上收货地址，需排查代收、刷单地址。"
+  },
+  {
+    "rule_code": "R010",
+    "rule_name": "用户信用分过低",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 15,
+    "condition_json": {"field": "user_credit_score", "op": "<", "value": 60},
+    "description": "平台信用分低于 60，历史履约表现较差。"
+  },
+  {
+    "rule_code": "R011",
+    "rule_name": "用户黑名单命中",
+    "rule_status": "enabled",
+    "priority": 10,
+    "score": 30,
+    "condition_json": {"field": "user_blacklist_hit", "op": "==", "value": 1},
+    "description": "用户编号命中黑名单，直接提升至高风险处置。"
+  },
+  {
+    "rule_code": "R012",
+    "rule_name": "夜间下单占比高",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 12,
+    "condition_json": {"and": [{"field": "user_night_order_ratio", "op": ">=", "value": 0.5}, {"field": "user_order_cnt_90d", "op": ">=", "value": 5}]},
+    "description": "近 90 天夜间（22:00-06:00）下单占比超过 50%，行为异常。"
+  },
+  {
+    "rule_code": "R013",
+    "rule_name": "超大额订单",
+    "rule_status": "enabled",
+    "priority": 7,
+    "score": 18,
+    "condition_json": {"field": "order_amount", "op": ">=", "value": 5000},
+    "description": "单笔订单金额达到 5000 元，需要核实支付能力与交易真实性。"
+  },
+  {
+    "rule_code": "R014",
+    "rule_name": "折扣力度异常",
+    "rule_status": "enabled",
+    "priority": 5,
+    "score": 14,
+    "condition_json": {"field": "order_discount_rate", "op": ">=", "value": 0.5},
+    "description": "订单折扣率达到 50%，存在优惠券滥用或价格套利风险。"
+  },
+  {
+    "rule_code": "R015",
+    "rule_name": "运费占比异常",
+    "rule_status": "enabled",
+    "priority": 3,
+    "score": 10,
+    "condition_json": {"and": [{"field": "order_freight_ratio", "op": ">=", "value": 0.15}, {"field": "order_amount", "op": "<", "value": 300}]},
+    "description": "小额订单运费占比超过 15%，可能是虚假交易凑单。"
+  },
+  {
+    "rule_code": "R016",
+    "rule_name": "高风险支付方式",
+    "rule_status": "enabled",
+    "priority": 8,
+    "score": 20,
+    "condition_json": {"field": "order_pay_method", "op": "in", "value": ["虚拟卡", "游戏点卡"]},
+    "description": "使用虚拟卡、游戏点卡等难以追溯的支付方式。"
+  },
+  {
+    "rule_code": "R017",
+    "rule_name": "秒级支付大额订单",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 12,
+    "condition_json": {"and": [{"field": "order_pay_interval_sec", "op": "<=", "value": 5}, {"field": "order_amount", "op": ">=", "value": 1000}]},
+    "description": "下单后 5 秒内完成支付且金额超过 1000 元，疑似脚本或盗刷。"
+  },
+  {
+    "rule_code": "R018",
+    "rule_name": "收货地址跨区异常",
+    "rule_status": "enabled",
+    "priority": 5,
+    "score": 14,
+    "condition_json": {"field": "order_address_distance_km", "op": ">=", "value": 1500},
+    "description": "收货地址距离注册地超过 1500 公里，存在异地套现风险。"
+  },
+  {
+    "rule_code": "R019",
+    "rule_name": "高风险商品类目",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 16,
+    "condition_json": {"field": "order_category_risk_score", "op": ">=", "value": 80},
+    "description": "订单商品属于平台定义的高风险类目（虚拟充值、数码易变现等）。"
+  },
+  {
+    "rule_code": "R020",
+    "rule_name": "同 IP 订单聚集",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 15,
+    "condition_json": {"field": "order_ip_order_cnt", "op": ">=", "value": 5},
+    "description": "近 7 天同一 IP 产生 5 笔以上订单，疑似工作室批量操作。"
+  },
+  {
+    "rule_code": "R021",
+    "rule_name": "同设备订单聚集",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 15,
+    "condition_json": {"field": "order_device_order_cnt", "op": ">=", "value": 4},
+    "description": "近 7 天同一设备产生 4 笔以上订单，疑似多账号批量下单。"
+  },
+  {
+    "rule_code": "R022",
+    "rule_name": "订单商品件数异常",
+    "rule_status": "disabled",
+    "priority": 3,
+    "score": 8,
+    "condition_json": {"field": "order_item_cnt", "op": ">=", "value": 12},
+    "description": "单笔订单商品件数达到 12 件，需关注批量扫货行为。"
+  },
+  {
+    "rule_code": "R023",
+    "rule_name": "高额售后申请",
+    "rule_status": "enabled",
+    "priority": 7,
+    "score": 18,
+    "condition_json": {"and": [{"field": "event_type", "op": "==", "value": "after_sale_apply"}, {"field": "order_amount", "op": ">=", "value": 1500}]},
+    "description": "对 1500 元以上订单发起售后，需核实退款动机。"
+  },
+  {
+    "rule_code": "R024",
+    "rule_name": "物流投诉聚集",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 15,
+    "condition_json": {"and": [{"field": "event_type", "op": "==", "value": "logistics_complaint"}, {"or": [{"field": "user_complaint_cnt", "op": ">=", "value": 2}, {"field": "user_order_cnt_30d", "op": ">=", "value": 8}]}]},
+    "description": "物流投诉事件叠加历史投诉或高频下单，需排查恶意投诉。"
+  },
+  {
+    "rule_code": "R025",
+    "rule_name": "夜间大额下单",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 12,
+    "condition_json": {"and": [{"field": "order_hour", "op": "<", "value": 6}, {"field": "order_amount", "op": ">=", "value": 3000}]},
+    "description": "凌晨 0-6 点产生 3000 元以上订单，与正常消费习惯偏离。"
+  },
+  {
+    "rule_code": "R026",
+    "rule_name": "地址与手机号归属地不一致",
+    "rule_status": "enabled",
+    "priority": 5,
+    "score": 13,
+    "condition_json": {"field": "address_phone_consistency", "op": "==", "value": 0},
+    "description": "收货地址城市与手机号归属地不一致，存在代收或盗用风险。"
+  },
+  {
+    "rule_code": "R027",
+    "rule_name": "地址变更频繁",
+    "rule_status": "enabled",
+    "priority": 5,
+    "score": 14,
+    "condition_json": {"field": "address_change_cnt", "op": ">=", "value": 3},
+    "description": "收货地址累计变更达到 3 次，需关注虚假收货信息。"
+  },
+  {
+    "rule_code": "R028",
+    "rule_name": "收货地址高度集中",
+    "rule_status": "disabled",
+    "priority": 3,
+    "score": 10,
+    "condition_json": {"and": [{"field": "address_concentration", "op": ">=", "value": 0.95}, {"field": "user_order_cnt_90d", "op": ">=", "value": 8}]},
+    "description": "近 90 天 95% 以上订单寄往同一地址，需排查代收点刷单。"
+  },
+  {
+    "rule_code": "R029",
+    "rule_name": "虚拟类目商品",
+    "rule_status": "enabled",
+    "priority": 6,
+    "score": 15,
+    "condition_json": {"field": "order_category", "op": "contains", "value": "虚拟"},
+    "description": "订单包含虚拟类目商品，资金流向难以追踪且退款争议高。"
+  },
+  {
+    "rule_code": "R030",
+    "rule_name": "非企业用户大额下单",
+    "rule_status": "enabled",
+    "priority": 4,
+    "score": 10,
+    "condition_json": {"and": [{"not": {"field": "user_is_enterprise", "op": "==", "value": 1}}, {"field": "order_amount", "op": ">=", "value": 3000}]},
+    "description": "个人用户单笔下单超过 3000 元，需核实购买用途与支付能力。"
+  }
+]

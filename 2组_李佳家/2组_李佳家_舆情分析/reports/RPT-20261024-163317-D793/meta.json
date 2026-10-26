@@ -1,0 +1,42 @@
+{
+  "report_id": "RPT-20261024-163317-D793",
+  "topic": "预制菜进校园",
+  "created_at": "2026-10-24T16:33:17+08:00",
+  "query": "预制菜进校园",
+  "source_count": 48,
+  "evidence_count": 10,
+  "sentiment": {
+    "counts": {
+      "positive": 14,
+      "neutral": 16,
+      "negative": 18
+    },
+    "ratios": {
+      "positive": 29.2,
+      "neutral": 33.3,
+      "negative": 37.5
+    },
+    "labels": {
+      "positive": "正向",
+      "neutral": "中性",
+      "negative": "负向"
+    },
+    "total": 48,
+    "judgement": "整体中性偏负：负面占 37.5%、中性 33.3%、正向 29.2%，质疑情绪仍占上风。",
+    "label": "中性偏负",
+    "trend": "近 7 天负面声量较前期回落 24.5 个百分点，情绪趋于缓和。",
+    "trend_direction": "down",
+    "recent_negative_ratio": 26.7,
+    "earlier_negative_ratio": 51.2,
+    "dominant": "negative",
+    "refs": [
+      "S01",
+      "S03",
+      "S08",
+      "S02"
+    ]
+  },
+  "risk_level": "medium",
+  "summary": "近期，多地家长在社交平台反映学校午餐使用复热即食类预制菜，与校方“现做现供”的说法不符，引发对校园餐供应链、标签公示和家长知情权的集中讨论。事件从本地家长论坛的一条配图帖起步，经短视频探店、主流媒体调查和监管部门回应逐步升级，形成“家长质…",
+  "duration_ms": 0
+}

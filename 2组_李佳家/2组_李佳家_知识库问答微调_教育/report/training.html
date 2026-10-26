@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>训练 · 微调实验报告</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="mark">知</span><span>知行学堂 · 知识库问答模型微调实验</span></div>
+  <nav class="nav"><a href="index.html" class="">总览</a><a href="dataset.html" class="">数据集</a><a href="training.html" class="active">训练</a><a href="evaluation.html" class="">评测</a><a href="samples.html" class="">样例对比</a></nav>
+</div>
+<div class="page">
+<div class="hero">
+  <h1>LoRA 微调训练</h1>
+  <p>在 CPU 环境下完成 Qwen2.5-0.5B-Instruct 的 LoRA 指令微调，仅训练 1.75% 参数</p>
+  <div class="tags"><span class="tag">LoRA r=16</span><span class="tag">7 个投影层</span><span class="tag">assistant-only loss</span><span class="tag">CPU 训练</span></div>
+</div>
+<div class="kpis">
+  <div class="kpi"><div class="label">训练步数</div><div class="value">60</div><div class="sub">batch 1 × 累积 2</div></div>
+  <div class="kpi"><div class="label">可训练参数</div><div class="value">8.80M</div><div class="sub">占比 1.75%</div></div>
+  <div class="kpi"><div class="label">最佳验证损失</div><div class="value">0.2501</div><div class="sub">验证集 60 条</div></div>
+  <div class="kpi"><div class="label">训练时长</div><div class="value">13.1 分钟</div><div class="sub">设备 CPU</div></div>
+  <div class="kpi"><div class="label">序列长度</div><div class="value">576</div><div class="sub">assistant 部分计算损失</div></div>
+  <div class="kpi"><div class="label">学习率</div><div class="value">2.5e-04</div><div class="sub">warmup 5 步</div></div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>训练损失曲线</h2>
+  <p class="desc">蓝线为每个优化步的训练损失，橙点为验证损失（每 20 步评估一次）。</p>
+  <div class="card">
+    <svg width="100%" viewBox="0 0 1020 300" style="display:block">
+  <line x1="55" y1="262.0" x2="1000" y2="262.0" stroke="#eef2f7"/><text x="47" y="266.0" text-anchor="end" font-size="10" fill="#94a3b8">0.00</text><line x1="55" y1="201.5" x2="1000" y2="201.5" stroke="#eef2f7"/><text x="47" y="205.5" text-anchor="end" font-size="10" fill="#94a3b8">0.67</text><line x1="55" y1="141.0" x2="1000" y2="141.0" stroke="#eef2f7"/><text x="47" y="145.0" text-anchor="end" font-size="10" fill="#94a3b8">1.34</text><line x1="55" y1="80.5" x2="1000" y2="80.5" stroke="#eef2f7"/><text x="47" y="84.5" text-anchor="end" font-size="10" fill="#94a3b8">2.01</text><line x1="55" y1="20.0" x2="1000" y2="20.0" stroke="#eef2f7"/><text x="47" y="24.0" text-anchor="end" font-size="10" fill="#94a3b8">2.68</text>
+  <text x="55.0" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">1</text><text x="247.2" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">13</text><text x="439.4" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">25</text><text x="615.6" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">36</text><text x="807.8" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">48</text><text x="1000.0" y="286" text-anchor="middle" font-size="10" fill="#94a3b8">60</text>
+  <polyline points="55.0,110.4 71.0,20.0 87.0,133.0 103.1,129.0 119.1,144.5 135.1,166.7 151.1,108.0 167.1,162.4 183.1,174.0 199.2,75.1 215.2,171.3 231.2,180.5 247.2,189.5 263.2,171.4 279.2,203.5 295.3,183.1 311.3,191.3 327.3,211.1 343.3,188.2 359.3,208.3 375.3,209.8 391.4,217.1 407.4,221.3 423.4,239.2 439.4,225.5 455.4,221.5 471.4,232.6 487.5,247.8 503.5,178.4 519.5,191.3 535.5,232.6 551.5,216.4 567.5,223.6 583.6,222.5 599.6,208.0 615.6,227.4 631.6,225.1 647.6,54.0 663.6,233.9 679.7,223.5 695.7,244.2 711.7,211.7 727.7,252.4 743.7,236.0 759.7,218.2 775.8,240.6 791.8,200.5 807.8,220.6 823.8,243.2 839.8,211.3 855.8,171.0 871.9,247.1 887.9,245.6 903.9,244.8 919.9,252.6 935.9,239.1 951.9,234.6 968.0,241.4 984.0,238.1 1000.0,244.4" fill="none" stroke="#2563eb" stroke-width="2.8"/>
+  <polyline points="359.3,225.4 679.7,237.8 1000.0,239.4" fill="none" stroke="#f59e0b" stroke-width="2.2"/><circle cx="359.3" cy="225.4" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2"/><circle cx="679.7" cy="237.8" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2"/><circle cx="1000.0" cy="239.4" r="3.4" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+  <text x="510" y="298" text-anchor="middle" font-size="10" fill="#94a3b8">优化步数（step）</text>
+</svg>
+    <div class="legend">
+      <span><i style="background:#2563eb"></i>训练损失</span>
+      <span><i style="background:#f59e0b"></i>验证损失</span>
+      <span>横轴：优化步数</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>训练配置</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>模型与 LoRA</h3>
+      <div class="kv">
+        <span class="k">基座模型</span><span>Qwen2.5-0.5B-Instruct（494M）</span>
+        <span class="k">LoRA rank</span><span>16</span>
+        <span class="k">LoRA alpha</span><span>32</span>
+        <span class="k">LoRA dropout</span><span>0.05</span>
+        <span class="k">目标模块</span><span>q/k/v/o/gate/up/down_proj</span>
+        <span class="k">精度</span><span>float32</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>优化设置</h3>
+      <div class="kv">
+        <span class="k">优化器</span><span>AdamW (β=0.9/0.95)</span>
+        <span class="k">学习率</span><span>0.00025（余弦衰减）</span>
+        <span class="k">批大小</span><span>1 × 梯度累积 2</span>
+        <span class="k">最大序列长度</span><span>576</span>
+        <span class="k">训练样本</span><span>420 条</span>
+        <span class="k">完成时间</span><span>2026-10-24 16:43:07</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>训练日志</h2>
+  <p class="desc">以下为脚本输出的真实训练日志（节选），完整日志见 outputs/train_console.log 与 training_log.csv。</p>
+  <div class="terminal"><div class="b">[step  51/60] loss=1.0079 val=       - lr=1.62e-05 grad=4.18 925 tok 11.4s (81 tok/s)</div><div class="b">[step  52/60] loss=0.1645 val=       - lr=1.28e-05 grad=1.37 956 tok 11.6s (82 tok/s)</div><div class="b">[step  53/60] loss=0.1820 val=       - lr=9.86e-06 grad=1.43 924 tok 11.6s (80 tok/s)</div><div class="b">[step  54/60] loss=0.1908 val=       - lr=7.27e-06 grad=1.49 963 tok 12.0s (80 tok/s)</div><div class="b">[step  55/60] loss=0.1036 val=       - lr=5.06e-06 grad=1.25 980 tok 12.5s (79 tok/s)</div><div class="b">[step  56/60] loss=0.2538 val=       - lr=3.25e-06 grad=1.78 928 tok 12.7s (73 tok/s)</div><div class="b">[step  57/60] loss=0.3039 val=       - lr=1.83e-06 grad=2.07 943 tok 12.4s (76 tok/s)</div><div class="b">[step  58/60] loss=0.2277 val=       - lr=8.15e-07 grad=1.76 932 tok 12.8s (73 tok/s)</div><div class="b">[step  59/60] loss=0.2648 val=       - lr=2.04e-07 grad=1.76 863 tok 14.6s (59 tok/s)</div><div class="b">[step  60/60] loss=0.1948 val=  0.2501 lr=0.00e+00 grad=1.96 971 tok 13.1s (74 tok/s)</div><div class="m">==============================================================================</div><div class="g">训练完成：13.1 分钟，最佳验证损失 0.2501</div><div class="">LoRA 适配器：E:\260515\张晨\项目实战_交付\3组_张晨_知识库问答微调_教育\outputs\lora_adapter</div><div class="">训练摘要：E:\260515\张晨\项目实战_交付\3组_张晨_知识库问答微调_教育\outputs\training_summary.json</div>
+  </div>
+</div>
+
+<div class="footer">实验环境：Windows · Python 3.12 · PyTorch CPU · Qwen2.5-0.5B-Instruct · LoRA (r=16)　|　数据与指标均可通过 scripts/ 目录脚本复现</div>
+</div>
+</body>
+</html>

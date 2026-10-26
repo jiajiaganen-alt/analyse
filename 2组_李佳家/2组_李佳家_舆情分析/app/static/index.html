@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>舆情分析平台 · 控制台</title>
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round">
+            <path d="M4 18V9M9.5 18V5M15 18v-6M20.5 18v-9"/>
+            <path d="M2.5 21h19" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <strong>舆情分析平台</strong>
+          <span>PUBLIC OPINION CONSOLE</span>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-label">工作台</div>
+        <a class="nav-item" data-route="console" href="#/console">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          <span>控制台</span>
+        </a>
+        <a class="nav-item" data-route="search" href="#/search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/><path d="M8 10.5h5M10.5 8v5" opacity=".7"/></svg>
+          <span>主题检索</span>
+        </a>
+        <a class="nav-item" data-route="forum" href="#/forum">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5.5h16v10.5H9l-5 4V5.5Z"/><path d="M8 9h8M8 12h5"/></svg>
+          <span>论坛监控</span>
+        </a>
+        <a class="nav-item" data-route="graph" href="#/graph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="17.5" r="2.4"/><path d="M8.1 7.2 15.8 7M7.3 8.1l3.4 7.3M16.8 9l-3.4 6.4"/></svg>
+          <span>图谱查看</span>
+        </a>
+        <div class="nav-label nav-label-second">管理</div>
+        <a class="nav-item" data-route="config" href="#/config">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06-2.83 2.83-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21h-4v-.08A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.56-1.03H3v-4h.08A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.64h.01A1.7 1.7 0 0 0 10 3.08V3h4v.08A1.7 1.7 0 0 0 15 4.64a1.7 1.7 0 0 0 1.87-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.36 9v.01A1.7 1.7 0 0 0 20.92 10H21v4h-.08A1.7 1.7 0 0 0 19.4 15Z"/></svg>
+          <span>配置管理</span>
+        </a>
+        <a class="nav-item" data-route="status" href="#/status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l2.2-6 3.6 12 2.2-6h6"/></svg>
+          <span>系统状态</span>
+        </a>
+      </div>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-row">
+          <span class="side-label">系统状态</span>
+          <span class="badge badge-online" id="side-system-badge"><i class="dot"></i>在线</span>
+        </div>
+        <div class="sidebar-metric"><span>运行应用</span><b id="side-running-apps">0 / 5</b></div>
+        <div class="sidebar-progress"><i id="side-app-progress" style="width:0%"></i></div>
+        <div class="sidebar-metric"><span>实时通道</span><b id="side-ws">连接中</b></div>
+      </div>
+      <div class="sidebar-foot">
+        <span>Agent Pipeline v1.0</span><span>127.0.0.1:8714</span>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="crumb">
+          <span id="crumb-root">工作台</span>
+          <span class="sep">/</span>
+          <strong id="crumb-page">控制台</strong>
+        </div>
+        <div class="topbar-right">
+          <span class="ws-state" id="ws-state"><i></i><span>实时连接</span></span>
+          <span class="sys-pill" id="sys-pill"><i class="dot"></i><span>加载中</span></span>
+          <span class="clock" id="clock">--:--:--</span>
+        </div>
+      </header>
+      <main id="view" class="view">
+        <div class="page-loading">
+          <div class="spinner"></div>
+          <span>正在加载控制台…</span>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="toast-root" class="toast-root"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

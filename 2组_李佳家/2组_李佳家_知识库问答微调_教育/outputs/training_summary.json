@@ -1,0 +1,38 @@
+{
+  "base_model": "D:\\ai_models\\modelscope_cache\\models\\Qwen\\Qwen2___5-0___5B-Instruct",
+  "base_model_name": "Qwen2.5-0.5B-Instruct",
+  "device": "cpu",
+  "dtype": "float32",
+  "total_params": 502830976,
+  "trainable_params": 8798208,
+  "trainable_ratio": 0.017497,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "train": {
+    "max_steps": 60,
+    "max_length": 576,
+    "batch_size": 1,
+    "grad_accum": 2,
+    "learning_rate": 0.00025,
+    "warmup_steps": 5,
+    "samples": 420,
+    "validation_samples": 60
+  },
+  "best_val_loss": 0.2501,
+  "duration_seconds": 786.9,
+  "finished_at": "2026-10-24 16:43:07",
+  "adapter_dir": "E:\\260515\\张晨\\项目实战_交付\\3组_张晨_知识库问答微调_教育\\outputs\\lora_adapter",
+  "best_adapter_dir": "E:\\260515\\张晨\\项目实战_交付\\3组_张晨_知识库问答微调_教育\\outputs\\lora_adapter_best"
+}

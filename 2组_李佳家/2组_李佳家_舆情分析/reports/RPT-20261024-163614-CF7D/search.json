@@ -1,0 +1,350 @@
+{
+  "report_id": "RPT-20261024-163614-CF7D",
+  "topic": "预制菜进校园",
+  "query": "预制菜进校园",
+  "executed_at": "2026-10-24T16:36:14+08:00",
+  "source_types": [
+    "news",
+    "image",
+    "video",
+    "forum_post",
+    "internal_data"
+  ],
+  "source_summary": {
+    "total": 48,
+    "by_type": {
+      "news": 14,
+      "image": 8,
+      "video": 8,
+      "forum_post": 10,
+      "internal_data": 8
+    },
+    "date_range": {
+      "earliest": "2026-09-25T20:36:14+08:00",
+      "latest": "2026-10-24T10:06:14+08:00",
+      "span_days": 28.6
+    },
+    "top_sources": [
+      {
+        "ref": "S01",
+        "id": "V01",
+        "title": "央视新闻调查：预制菜如何进入校园餐桌",
+        "source": "央视新闻",
+        "type": "video",
+        "published_at": "2026-10-14T16:36:14+08:00"
+      },
+      {
+        "ref": "S02",
+        "id": "N02",
+        "title": "教育部：预制菜不宜推广进校园 应审慎对待",
+        "source": "中国教育报",
+        "type": "news",
+        "published_at": "2026-10-15T16:36:14+08:00"
+      },
+      {
+        "ref": "S03",
+        "id": "F06",
+        "title": "微博话题#预制菜进校园#阅读量3.2亿",
+        "source": "微博",
+        "type": "forum_post",
+        "published_at": "2026-10-15T02:36:14+08:00"
+      },
+      {
+        "ref": "S04",
+        "id": "F03",
+        "title": "家委会联名信：要求公开供餐企业和检测报告",
+        "source": "城市家长论坛",
+        "type": "forum_post",
+        "published_at": "2026-10-04T16:36:14+08:00"
+      },
+      {
+        "ref": "S05",
+        "id": "F01",
+        "title": "孩子说午餐是“料理包”，有图有真相",
+        "source": "城市家长论坛",
+        "type": "forum_post",
+        "published_at": "2026-09-25T20:36:14+08:00"
+      },
+      {
+        "ref": "S06",
+        "id": "N05",
+        "title": "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+        "source": "澎湃新闻",
+        "type": "news",
+        "published_at": "2026-10-05T16:36:14+08:00"
+      },
+      {
+        "ref": "S07",
+        "id": "N11",
+        "title": "多地推行“明厨亮灶” 家长扫码可看后厨直播",
+        "source": "央视新闻",
+        "type": "news",
+        "published_at": "2026-10-21T16:36:14+08:00"
+      },
+      {
+        "ref": "S08",
+        "id": "N01",
+        "title": "市场监管总局部署秋季校园食品安全专项检查 严把原料采购关",
+        "source": "国家市场监督管理总局",
+        "type": "news",
+        "published_at": "2026-10-24T10:06:14+08:00"
+      },
+      {
+        "ref": "S09",
+        "id": "V02",
+        "title": "抖音博主探访中央厨房 播放量破千万",
+        "source": "抖音",
+        "type": "video",
+        "published_at": "2026-09-27T14:36:14+08:00"
+      },
+      {
+        "ref": "S10",
+        "id": "N12",
+        "title": "网传学生餐后不适 官方通报：未检出食源性致病因素",
+        "source": "市卫生健康委员会",
+        "type": "news",
+        "published_at": "2026-10-17T16:36:14+08:00"
+      }
+    ]
+  },
+  "analysis_output": {
+    "sentiment": {
+      "counts": {
+        "positive": 14,
+        "neutral": 16,
+        "negative": 18
+      },
+      "ratios": {
+        "positive": 29.2,
+        "neutral": 33.3,
+        "negative": 37.5
+      },
+      "labels": {
+        "positive": "正向",
+        "neutral": "中性",
+        "negative": "负向"
+      },
+      "total": 48,
+      "judgement": "整体中性偏负：负面占 37.5%、中性 33.3%、正向 29.2%，质疑情绪仍占上风。",
+      "label": "中性偏负",
+      "trend": "近 7 天负面声量较前期回落 24.5 个百分点，情绪趋于缓和。",
+      "trend_direction": "down",
+      "recent_negative_ratio": 26.7,
+      "earlier_negative_ratio": 51.2,
+      "dominant": "negative"
+    },
+    "risk_summary": {
+      "score": 55.0,
+      "level": "medium",
+      "level_label": "较高",
+      "high_count": 2,
+      "medium_count": 2,
+      "low_count": 1,
+      "basis": [
+        "负面来源占比 37.5%",
+        "高风险点 2 项",
+        "论坛负面占比 75.5%",
+        "视频负面占比 42.6%"
+      ],
+      "forum_negative_ratio": 75.5,
+      "video_negative_ratio": 42.6,
+      "dominant_channel": "新闻媒体"
+    },
+    "opinion_groups": [
+      {
+        "role": "监管部门",
+        "stance": "理性观望",
+        "count": 12
+      },
+      {
+        "role": "家长",
+        "stance": "质疑 / 担忧",
+        "count": 11
+      },
+      {
+        "role": "媒体",
+        "stance": "质疑 / 担忧",
+        "count": 8
+      },
+      {
+        "role": "内部",
+        "stance": "理性观望",
+        "count": 5
+      },
+      {
+        "role": "学校",
+        "stance": "认可 / 支持",
+        "count": 5
+      },
+      {
+        "role": "专家",
+        "stance": "理性观望",
+        "count": 4
+      },
+      {
+        "role": "企业",
+        "stance": "认可 / 支持",
+        "count": 2
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "预制菜",
+        "score": 14.12,
+        "count": 8
+      },
+      {
+        "keyword": "校园餐",
+        "score": 10.82,
+        "count": 6
+      },
+      {
+        "keyword": "陪餐",
+        "score": 10.25,
+        "count": 6
+      },
+      {
+        "keyword": "公示",
+        "score": 8.89,
+        "count": 5
+      },
+      {
+        "keyword": "净菜",
+        "score": 8.58,
+        "count": 5
+      },
+      {
+        "keyword": "中央厨房",
+        "score": 6.96,
+        "count": 4
+      },
+      {
+        "keyword": "留样",
+        "score": 6.88,
+        "count": 4
+      },
+      {
+        "keyword": "标签",
+        "score": 5.24,
+        "count": 3
+      },
+      {
+        "keyword": "监测",
+        "score": 5.23,
+        "count": 3
+      },
+      {
+        "keyword": "峰值",
+        "score": 3.7,
+        "count": 2
+      }
+    ]
+  },
+  "agent_steps": [
+    {
+      "index": 1,
+      "key": "collect",
+      "title": "多来源检索",
+      "agent": "collector",
+      "app_name": "topic_search",
+      "status": "success",
+      "started_at": "2026-10-24T16:36:14+08:00",
+      "duration_ms": 80.0,
+      "summary": "命中 48 条来源，覆盖 新闻媒体 14、图片素材 8、视频内容 8、论坛帖子 10、内部数据 8",
+      "metrics": {
+        "source_count": 48,
+        "source_counts": {
+          "news": 14,
+          "image": 8,
+          "video": 8,
+          "forum_post": 10,
+          "internal_data": 8
+        },
+        "span_days": 28.6,
+        "query": "预制菜进校园"
+      }
+    },
+    {
+      "index": 2,
+      "key": "multimedia",
+      "title": "多媒体解析",
+      "agent": "multimedia",
+      "app_name": "multimedia_search",
+      "status": "success",
+      "started_at": "2026-10-24T16:36:14+08:00",
+      "duration_ms": 52.5,
+      "summary": "解析 16 个多媒体素材（图片 8 / 视频 8），OCR 8 条、ASR 8 条",
+      "metrics": {
+        "asset_count": 16,
+        "image_count": 8,
+        "video_count": 8,
+        "ocr_count": 8,
+        "asr_count": 8,
+        "total_duration_seconds": 51392
+      }
+    },
+    {
+      "index": 3,
+      "key": "insight",
+      "title": "洞察分析",
+      "agent": "analyzer",
+      "app_name": "insight_analysis",
+      "status": "success",
+      "started_at": "2026-10-24T16:36:14+08:00",
+      "duration_ms": 53.2,
+      "summary": "情绪：正 29.2% / 中 33.3% / 负 37.5%；观点组 7 个；风险 较高（55.0）",
+      "metrics": {
+        "opinion_groups": 7,
+        "risk_count": 5,
+        "risk_score": 55.0,
+        "negative_ratio": 37.5,
+        "keyword_count": 12
+      }
+    },
+    {
+      "index": 4,
+      "key": "report",
+      "title": "报告生成",
+      "agent": "reporter",
+      "app_name": "report_writer",
+      "status": "success",
+      "started_at": "2026-10-24T16:36:14+08:00",
+      "duration_ms": 290.8,
+      "summary": "报告 RPT-20261024-163614-CF7D 生成完成：8 个章节，来源 48 条，引用 10 条重点证据",
+      "metrics": {
+        "sections": 8,
+        "evidence_count": 10,
+        "source_count": 48
+      }
+    },
+    {
+      "index": 5,
+      "key": "graph",
+      "title": "图谱构建",
+      "agent": "graph",
+      "app_name": "report_writer",
+      "status": "success",
+      "started_at": "2026-10-24T16:36:14+08:00",
+      "duration_ms": 230.5,
+      "summary": "图谱构建完成：51 个节点、91 条关系，覆盖 18 条来源",
+      "metrics": {
+        "node_count": 51,
+        "edge_count": 91,
+        "source_node_count": 18
+      }
+    }
+  ],
+  "multimedia": {
+    "asset_count": 16,
+    "image_count": 8,
+    "video_count": 8,
+    "ocr_count": 8,
+    "asr_count": 8,
+    "total_duration_seconds": 51392
+  },
+  "graph": {
+    "graph_path": "graphs/RPT-20261024-163614-CF7D/graph.json",
+    "node_count": 51,
+    "edge_count": 91
+  }
+}

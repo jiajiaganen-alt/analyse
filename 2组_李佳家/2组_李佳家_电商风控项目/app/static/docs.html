@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接口文档 · 电商风险控制系统</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body { background: #f4f6fb; }
+        .docs-topbar {
+            height: 62px; padding: 0 28px; display: flex; align-items: center; gap: 12px;
+            background: rgba(255, 255, 255, .95); border-bottom: 1px solid #e6eaf2;
+            position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px);
+        }
+        .docs-brand { display: flex; align-items: center; gap: 10px; }
+        .docs-brand-mark {
+            width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff;
+            background: linear-gradient(140deg, #4c86ff, #2f6bff 55%, #1d4ed8); box-shadow: 0 6px 16px rgba(47, 107, 255, .3);
+        }
+        .docs-brand-mark svg { width: 20px; height: 20px; }
+        .docs-brand-text { display: flex; flex-direction: column; line-height: 1.25; }
+        .docs-brand-text strong { font-size: 13px; }
+        .docs-brand-text span { font-size: 9.5px; color: #98a2b3; }
+        .docs-topnav { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+        .docs-topnav a {
+            display: inline-flex; align-items: center; gap: 5px; height: 31px; padding: 0 10px;
+            border: 1px solid #e6eaf2; border-radius: 8px; background: #fff; color: #475467;
+            font-size: 10.5px; font-weight: 600;
+        }
+        .docs-topnav a:hover { color: #2f6bff; border-color: #c9d8f8; background: #f5f8ff; }
+        .docs-topnav a svg { width: 13px; height: 13px; }
+        .docs-wrap { max-width: 1264px; margin: 0 auto; padding: 20px 28px 42px; }
+        .docs-hero {
+            display: flex; align-items: center; justify-content: space-between; gap: 26px;
+            padding: 23px 26px; border-radius: 18px; color: #fff;
+            background:
+                radial-gradient(110% 140% at 90% -20%, rgba(91, 140, 255, .45) 0%, transparent 55%),
+                linear-gradient(125deg, #0b1322 0%, #101d34 58%, #17294a 100%);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, .18);
+            position: relative; overflow: hidden;
+        }
+        .docs-hero::after {
+            content: ""; position: absolute; right: 170px; bottom: -70px; width: 220px; height: 220px;
+            border-radius: 50%; border: 1px solid rgba(255, 255, 255, .07);
+        }
+        .docs-hero-main { position: relative; z-index: 1; }
+        .docs-eyebrow { display: flex; align-items: center; gap: 7px; font-size: 9.5px; color: #8fb1f9; font-weight: 700; letter-spacing: 1.2px; }
+        .docs-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: #12b76a; box-shadow: 0 0 8px #12b76a; }
+        .docs-hero h1 { margin-top: 7px; font-size: 26px; letter-spacing: -.5px; font-weight: 800; }
+        .docs-hero p { margin-top: 6px; max-width: 660px; color: #a9b8d1; font-size: 10.5px; line-height: 1.65; }
+        .docs-hero-chips { display: flex; align-items: center; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+        .docs-hero-chips span {
+            display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px;
+            background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .09);
+            color: #c8d6ed; font-size: 8.5px; font-weight: 600;
+        }
+        .docs-hero-side { flex: 0 0 318px; position: relative; z-index: 1; }
+        .base-url-box { padding: 12px 13px; border-radius: 11px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .1); }
+        .base-url-box span { display: block; font-size: 8px; color: #8fa1bd; letter-spacing: .8px; }
+        .base-url-box code { display: block; margin-top: 3px; color: #dbe8ff; font-family: "Consolas", monospace; font-size: 10px; }
+        .base-url-box .health-line { display: flex; align-items: center; gap: 6px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255, 255, 255, .12); font-size: 8.5px; color: #9fb3d1; }
+        .base-url-box .health-line .status-dot { width: 5px; height: 5px; }
+        .docs-layout { display: grid; grid-template-columns: minmax(0, 1fr) 398px; gap: 16px; align-items: start; margin-top: 16px; }
+        .docs-list-card { overflow: hidden; }
+        .docs-list-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px 11px; border-bottom: 1px solid #eef1f6; }
+        .docs-list-head h2 { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 7px; }
+        .docs-list-head h2 svg { width: 16px; height: 16px; color: #2f6bff; }
+        .docs-list-head span { font-size: 9.5px; color: #98a2b3; }
+        .endpoint-group { border-bottom: 1px solid #f1f3f8; }
+        .endpoint-group:last-child { border-bottom: 0; }
+        .endpoint-group-head {
+            display: flex; align-items: center; gap: 7px; padding: 8px 16px 6px;
+            background: #fbfcfe; color: #667085; font-size: 9px; font-weight: 800; letter-spacing: .5px;
+        }
+        .endpoint-group-head .g-count { margin-left: auto; font-size: 8px; color: #98a2b3; font-weight: 600; }
+        .endpoint-row {
+            display: grid; grid-template-columns: 48px minmax(0, 1fr) 84px 70px;
+            align-items: center; gap: 9px; padding: 6px 16px; cursor: pointer;
+            border-top: 1px solid #f6f8fb; transition: background .14s ease;
+        }
+        .endpoint-row:hover { background: #f6f9ff; }
+        .endpoint-row.active { background: #eef4ff; box-shadow: inset 3px 0 0 #2f6bff; }
+        .method {
+            display: inline-grid; place-items: center; height: 19px; border-radius: 4px;
+            font-family: "Consolas", monospace; font-size: 8px; font-weight: 800; letter-spacing: .3px;
+        }
+        .method.get { color: #067647; background: #ecfdf3; border: 1px solid #d1fadf; }
+        .method.post { color: #1849a9; background: #eff4ff; border: 1px solid #d1e0ff; }
+        .method.delete { color: #b42318; background: #fef3f2; border: 1px solid #fecdca; }
+        .endpoint-path { font-family: "Consolas", monospace; font-size: 9.5px; font-weight: 600; color: #1d2939; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .endpoint-summary { font-size: 9px; color: #667085; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .endpoint-auth { font-size: 8px; color: #98a2b3; text-align: right; }
+        .endpoint-tag { font-size: 8px; color: #475467; background: #f2f4f7; border-radius: 4px; padding: 2px 5px; text-align: center; }
+        .docs-detail { position: sticky; top: 78px; max-height: calc(100vh - 94px); overflow: auto; }
+        .detail-card { background: #fff; border: 1px solid #e6eaf2; border-radius: 15px; box-shadow: 0 8px 24px rgba(16, 24, 40, .05); overflow: hidden; }
+        .detail-head { padding: 15px 16px 13px; border-bottom: 1px solid #eef1f6; background: linear-gradient(180deg, #fbfcff, #fff); }
+        .detail-head .method { height: 21px; margin-bottom: 7px; }
+        .detail-path { font-family: "Consolas", monospace; font-size: 11px; font-weight: 700; color: #101828; word-break: break-all; }
+        .detail-head h3 { margin-top: 5px; font-size: 13px; font-weight: 700; }
+        .detail-head p { margin-top: 3px; font-size: 9px; color: #98a2b3; }
+        .detail-body { padding: 14px 16px 18px; }
+        .detail-section { margin-bottom: 15px; }
+        .detail-section:last-child { margin-bottom: 0; }
+        .detail-section h4 { font-size: 9px; font-weight: 800; color: #667085; letter-spacing: .8px; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; }
+        .detail-section h4 .line { flex: 1; height: 1px; background: #f0f3f8; }
+        .detail-desc { font-size: 9.5px; color: #475467; line-height: 1.6; }
+        .param-table { width: 100%; border-collapse: collapse; font-size: 8.5px; }
+        .param-table th { text-align: left; color: #98a2b3; font-weight: 600; padding: 4px 5px; border-bottom: 1px solid #f0f3f8; }
+        .param-table td { padding: 5px; border-bottom: 1px solid #f5f7fa; vertical-align: top; color: #475467; }
+        .param-table td:first-child { font-family: "Consolas", monospace; color: #1d2939; font-weight: 600; }
+        .param-required { color: #b42318; font-size: 7.5px; font-weight: 700; }
+        .param-type { color: #1849a9; font-family: "Consolas", monospace; font-size: 8px; }
+        .param-empty { font-size: 9px; color: #98a2b3; padding: 5px 0; }
+        .code-block {
+            margin: 0; padding: 10px 11px; border-radius: 8px;
+            background: #0f172a; color: #cfe0ff; font-family: "Consolas", monospace;
+            font-size: 8.5px; line-height: 1.55; overflow: auto; white-space: pre-wrap; word-break: break-all;
+        }
+        .response-item { display: flex; align-items: flex-start; gap: 7px; padding: 5px 0; border-bottom: 1px dashed #f0f3f8; font-size: 8.5px; }
+        .response-item:last-child { border-bottom: 0; }
+        .response-item .code { color: #067647; font-family: "Consolas", monospace; font-weight: 700; flex: 0 0 auto; }
+        .response-item .code.err { color: #b42318; }
+        .response-item span:last-child { color: #667085; }
+        .convention { display: flex; flex-direction: column; gap: 5px; font-size: 8.5px; color: #667085; line-height: 1.55; }
+        .convention code { background: #f2f4f7; border-radius: 3px; padding: 1px 4px; font-family: "Consolas", monospace; font-size: 8px; color: #475467; }
+        .docs-footer { margin-top: 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 8.5px; color: #98a2b3; }
+        @media (max-width: 1120px) {
+            .docs-layout { grid-template-columns: 1fr; }
+            .docs-detail { position: static; max-height: none; }
+            .docs-hero-side { display: none; }
+        }
+        @media (max-width: 760px) {
+            .docs-wrap { padding: 14px; }
+            .docs-topbar { padding: 0 14px; }
+            .endpoint-row { grid-template-columns: 44px minmax(0, 1fr); }
+            .endpoint-tag, .endpoint-auth { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header class="docs-topbar">
+        <div class="docs-brand">
+            <div class="docs-brand-mark">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.8l7.2 3.1v5.3c0 4.7-3.1 8.4-7.2 9.9-4.1-1.5-7.2-5.2-7.2-9.9V5.9L12 2.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.8 12.1l2.1 2.1 4.3-4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="docs-brand-text"><strong>RiskShield · 接口文档</strong><span>电商风险控制系统 REST API</span></div>
+        </div>
+        <nav class="docs-topnav">
+            <a href="/">控制台</a>
+            <a href="/openapi.json" target="_blank">OpenAPI JSON</a>
+            <a href="/api/health" target="_blank">健康检查</a>
+        </nav>
+    </header>
+
+    <main class="docs-wrap">
+        <section class="docs-hero">
+            <div class="docs-hero-main">
+                <div class="docs-eyebrow"><span class="dot"></span>OPENAPI 3.1 · OFFLINE READY</div>
+                <h1>电商风险控制系统 · 接口文档</h1>
+                <p>覆盖风险检查、规则管理、案件审核、黑名单、用户画像与运营看板的完整 HTTP API。所有接口返回统一 JSON，业务字段与需求文档 2.3.9 保持一致。</p>
+                <div class="docs-hero-chips">
+                    <span>24 个接口</span><span>8 个分组</span><span>统一 JSON</span><span>无外部 CDN</span><span>自动建库</span>
+                </div>
+            </div>
+            <div class="docs-hero-side">
+                <div class="base-url-box">
+                    <span>BASE URL</span>
+                    <code id="base-url">http://127.0.0.1:8713</code>
+                    <div class="health-line"><span class="status-dot" id="health-dot"></span><span id="health-text">正在检查服务状态...</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="docs-layout">
+            <section class="card docs-list-card">
+                <div class="docs-list-head">
+                    <h2><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3.5" width="16" height="17" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>接口目录</h2>
+                    <span id="endpoint-count">加载中...</span>
+                </div>
+                <div id="endpoint-list">
+                    <div style="padding:18px"><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line" style="width:82%"></div><div class="skeleton skeleton-line" style="width:91%"></div></div>
+                </div>
+            </section>
+
+            <aside class="docs-detail" id="endpoint-detail">
+                <div class="detail-card"><div class="detail-body"><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line" style="width:78%"></div><div class="skeleton skeleton-card" style="height:150px;margin-top:10px"></div></div></div>
+            </aside>
+        </div>
+
+        <div class="docs-footer">
+            <span>电商风险控制系统 v1.0.0 · FastAPI + SQLite + 原生前端</span>
+            <span>接口定义实时读取 <a href="/openapi.json" style="color:#2f6bff">/openapi.json</a></span>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            'use strict';
+            const state = { openapi: null, endpoints: [], selected: null };
+            const origin = window.location.origin;
+            document.getElementById('base-url').textContent = origin;
+
+            const METHOD_ORDER = { get: 0, post: 1, delete: 2 };
+            const TAG_ORDER = ['风险检查', '规则管理', '案件管理', '黑名单管理', '用户画像', '运营看板', '系统元数据', '系统'];
+
+            function esc(value) {
+                return String(value === null || value === undefined ? '' : value).replace(/[&<>"']/g, (ch) => ({
+                    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+                }[ch]));
+            }
+
+            function resolveRef(schema) {
+                if (schema && schema.$ref) {
+                    const name = schema.$ref.split('/').pop();
+                    return (state.openapi.components && state.openapi.components.schemas && state.openapi.components.schemas[name]) || {};
+                }
+                return schema || {};
+            }
+
+            function typeLabel(schema) {
+                const resolved = resolveRef(schema);
+                if (resolved.type === 'array') {
+                    return 'array<' + typeLabel(resolved.items || {}) + '>';
+                }
+                if (resolved.anyOf) return 'any';
+                if (resolved.enum) return 'enum';
+                return resolved.type || 'object';
+            }
+
+            function exampleFor(name) {
+                const map = {
+                    event_type: 'after_sale_apply', user_id: 'U1001', order_id: 'O1101', source_id: 'APP',
+                    case_id: 13, review_result: 'approved', review_remark: '已电话核实为本人操作，同意放行。', reviewer_id: 'RV001',
+                    rule_id: 1, rule_code: 'R031', rule_name: '高额优惠券套利', rule_status: 'enabled', priority: 5, score: 10,
+                    condition_json: { and: [{ field: 'order_amount', op: '>=', value: 1000 }, { field: 'user_register_days', op: '<', value: 30 }] },
+                    description: '规则说明', blacklist_type: 'device', blacklist_value: 'DEV-TEST-01', remark: '测试备注',
+                    status: 'active', id: 1, ids: [1, 2], items: [{ blacklist_type: 'device', blacklist_value: 'DEV-TEST-01', remark: '批量导入' }],
+                    page: 1, page_size: 20, risk_level: 'high', case_status: 'pending', keyword: 'U1001',
+                    assessment_id: 1, blacklist_type_filter: 'device'
+                };
+                return Object.prototype.hasOwnProperty.call(map, name) ? map[name] : '<' + name + '>';
+            }
+
+            function buildCurl(endpoint) {
+                let path = endpoint.path.replace(/\{([^}]+)\}/g, (_, name) => String(exampleFor(name)));
+                const url = origin + path;
+                if (endpoint.method === 'post') {
+                    const schema = resolveRef((endpoint.operation.requestBody && endpoint.operation.requestBody.content && endpoint.operation.requestBody.content['application/json'] && endpoint.operation.requestBody.content['application/json'].schema) || {});
+                    const properties = schema.properties || {};
+                    const body = {};
+                    Object.keys(properties).forEach((name) => { body[name] = exampleFor(name); });
+                    return "curl -X POST '" + url + "' \\\n  -H 'Content-Type: application/json' \\\n  -d '" + JSON.stringify(body, null, 2).replace(/'/g, "'\\''") + "'";
+                }
+                const params = (endpoint.operation.parameters || []).filter((item) => item.in === 'query');
+                if (params.length) {
+                    const query = params.map((item) => item.name + '=' + encodeURIComponent(String(exampleFor(item.name)))).join('&');
+                    return "curl '" + url + '?' + query + "'";
+                }
+                return "curl '" + url + "'";
+            }
+
+            function renderList() {
+                const list = document.getElementById('endpoint-list');
+                const groups = {};
+                state.endpoints.forEach((endpoint) => {
+                    const tag = (endpoint.operation.tags && endpoint.operation.tags[0]) || '其他接口';
+                    if (!groups[tag]) groups[tag] = [];
+                    groups[tag].push(endpoint);
+                });
+                const tags = Object.keys(groups).sort((a, b) => {
+                    const ai = TAG_ORDER.indexOf(a); const bi = TAG_ORDER.indexOf(b);
+                    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
+                });
+                list.innerHTML = tags.map((tag) => {
+                    const rows = groups[tag].map((endpoint) => {
+                        const active = state.selected && state.selected.method === endpoint.method && state.selected.path === endpoint.path;
+                        return '<div class="endpoint-row ' + (active ? 'active' : '') + '" data-method="' + endpoint.method + '" data-path="' + esc(endpoint.path) + '">' +
+                            '<span class="method ' + endpoint.method + '">' + endpoint.method.toUpperCase() + '</span>' +
+                            '<div><div class="endpoint-path">' + esc(endpoint.path) + '</div><div class="endpoint-summary">' + esc(endpoint.operation.summary || '—') + '</div></div>' +
+                            '<span class="endpoint-tag">' + esc(tag) + '</span>' +
+                            '<span class="endpoint-auth">' + ((endpoint.operation.parameters || []).length ? (endpoint.operation.parameters.length + ' 参数') : '—') + '</span>' +
+                        '</div>';
+                    }).join('');
+                    return '<div class="endpoint-group"><div class="endpoint-group-head">' + esc(tag) + '<span class="g-count">' + groups[tag].length + '</span></div>' + rows + '</div>';
+                }).join('');
+                document.getElementById('endpoint-count').textContent = '共 ' + state.endpoints.length + ' 个接口 · 点击查看详情';
+                Array.prototype.forEach.call(list.querySelectorAll('.endpoint-row'), (row) => {
+                    row.addEventListener('click', () => {
+                        const endpoint = state.endpoints.find((item) => item.method === row.dataset.method && item.path === row.dataset.path);
+                        if (!endpoint) return;
+                        state.selected = endpoint;
+                        renderList();
+                        renderDetail();
+                    });
+                });
+            }
+
+            function renderDetail() {
+                const endpoint = state.selected;
+                if (!endpoint) return;
+                const operation = endpoint.operation;
+                const parameters = (operation.parameters || []).map((parameter) => {
+                    const schema = resolveRef(parameter.schema || {});
+                    return '<tr><td>' + esc(parameter.name) + (parameter.required ? ' <span class="param-required">必填</span>' : '') + '</td>' +
+                        '<td>' + esc(parameter.in) + '</td><td><span class="param-type">' + esc(typeLabel(schema)) + '</span></td><td>' + esc(parameter.description || '—') + '</td></tr>';
+                }).join('');
+                const bodySchemaRaw = operation.requestBody && operation.requestBody.content && operation.requestBody.content['application/json'] && operation.requestBody.content['application/json'].schema;
+                const bodySchema = bodySchemaRaw ? resolveRef(bodySchemaRaw) : null;
+                const required = (bodySchema && bodySchema.required) || [];
+                const bodyRows = bodySchema && bodySchema.properties ? Object.keys(bodySchema.properties).map((name) => {
+                    const property = resolveRef(bodySchema.properties[name]);
+                    return '<tr><td>' + esc(name) + (required.indexOf(name) >= 0 ? ' <span class="param-required">必填</span>' : '') + '</td>' +
+                        '<td><span class="param-type">' + esc(typeLabel(property)) + '</span></td><td>' + esc(property.description || '—') + '</td></tr>';
+                }).join('') : '';
+                const responses = Object.keys(operation.responses || {}).map((code) => {
+                    const response = operation.responses[code];
+                    return '<div class="response-item"><span class="code ' + (code >= 400 ? 'err' : '') + '">' + esc(code) + '</span><span>' + esc(response.description || '响应') + '</span></div>';
+                }).join('');
+                const curl = buildCurl(endpoint);
+                document.getElementById('endpoint-detail').innerHTML =
+                    '<div class="detail-card">' +
+                        '<div class="detail-head"><span class="method ' + endpoint.method + '">' + endpoint.method.toUpperCase() + '</span>' +
+                            '<div class="detail-path">' + esc(endpoint.path) + '</div><h3>' + esc(operation.summary || '接口') + '</h3>' +
+                            '<p>' + esc((operation.tags && operation.tags[0]) || '') + ' · ' + ((operation.parameters || []).length) + ' 个参数' + (bodySchema ? ' · JSON 请求体' : '') + '</p></div>' +
+                        '<div class="detail-body">' +
+                            '<div class="detail-section"><h4>接口说明<span class="line"></span></h4><div class="detail-desc">' + esc(operation.description || operation.summary || '暂无说明') + '</div></div>' +
+                            '<div class="detail-section"><h4>请求参数<span class="line"></span></h4>' +
+                                (parameters ? '<table class="param-table"><thead><tr><th>参数</th><th>位置</th><th>类型</th><th>说明</th></tr></thead><tbody>' + parameters + '</tbody></table>' : '<div class="param-empty">无路径或查询参数</div>') + '</div>' +
+                            (bodySchema ? '<div class="detail-section"><h4>请求体字段<span class="line"></span></h4><table class="param-table"><thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead><tbody>' + bodyRows + '</tbody></table></div>' : '') +
+                            '<div class="detail-section"><h4>响应状态<span class="line"></span></h4>' + (responses || '<div class="param-empty">—</div>') + '</div>' +
+                            '<div class="detail-section"><h4>调用示例<span class="line"></span></h4><pre class="code-block">' + esc(curl) + '</pre></div>' +
+                            '<div class="detail-section"><h4>响应约定<span class="line"></span></h4><div class="convention">' +
+                                '<div>成功响应直接返回业务字段，例如 <code>risk_score</code>、<code>risk_level</code>、<code>feature_snapshot</code>、<code>rule_hits</code>。</div>' +
+                                '<div>列表接口统一返回 <code>{ items, total, page, page_size, pages }</code>。</div>' +
+                                '<div>业务异常返回 <code>{ detail, code, data }</code>，HTTP 状态码为 400 / 404 / 409。</div>' +
+                            '</div></div>' +
+                        '</div>' +
+                    '</div>';
+            }
+
+            async function loadHealth() {
+                try {
+                    const response = await fetch('/api/health');
+                    const data = await response.json();
+                    document.getElementById('health-dot').style.background = data.status === 'ok' ? '#12b76a' : '#f04438';
+                    document.getElementById('health-text').textContent = data.status === 'ok'
+                        ? '服务正常 · ' + data.counts.events + ' 条事件 · ' + data.counts.rules + ' 条规则'
+                        : '服务异常';
+                } catch (error) {
+                    document.getElementById('health-dot').style.background = '#f04438';
+                    document.getElementById('health-text').textContent = '健康检查失败';
+                }
+            }
+
+            async function init() {
+                loadHealth();
+                try {
+                    const response = await fetch('/openapi.json');
+                    const openapi = await response.json();
+                    state.openapi = openapi;
+                    const endpoints = [];
+                    Object.keys(openapi.paths).forEach((path) => {
+                        Object.keys(openapi.paths[path]).forEach((method) => {
+                            if (['get', 'post', 'put', 'delete', 'patch'].indexOf(method) < 0) return;
+                            endpoints.push({ path: path, method: method, operation: openapi.paths[path][method] });
+                        });
+                    });
+                    endpoints.sort((a, b) => (METHOD_ORDER[a.method] - METHOD_ORDER[b.method]) || a.path.localeCompare(b.path));
+                    state.endpoints = endpoints;
+                    const heroChips = document.querySelectorAll('.docs-hero-chips span');
+                    if (heroChips.length) heroChips[0].textContent = endpoints.length + ' 个接口';
+                    state.selected = endpoints.find((item) => item.path === '/api/risk/check' && item.method === 'post') || endpoints[0];
+                    renderList();
+                    renderDetail();
+                } catch (error) {
+                    document.getElementById('endpoint-list').innerHTML = '<div style="padding:24px;text-align:center;color:#b42318;font-size:11px">接口文档加载失败：' + esc(error.message) + '</div>';
+                }
+            }
+
+            init();
+        })();
+    </script>
+</body>
+</html>

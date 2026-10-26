@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>样例对比 · 微调实验报告</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="mark">知</span><span>知行学堂 · 知识库问答模型微调实验</span></div>
+  <nav class="nav"><a href="index.html" class="">总览</a><a href="dataset.html" class="">数据集</a><a href="training.html" class="">训练</a><a href="evaluation.html" class="">评测</a><a href="samples.html" class="active">样例对比</a></nav>
+</div>
+<div class="page">
+<div class="hero">
+  <h1>样例对比</h1>
+  <p>从测试集中选取引用、拒答、多片段整合三类典型问题，对比基线与微调模型的真实输出</p>
+  <div class="tags"><span class="tag">同题对比</span><span class="tag">真实生成结果</span><span class="tag">通过 / 未通过标注</span></div>
+</div><div class="section">
+  <div class="sample">
+    <div class="head">
+      <div><span class="pill blue">证据引用与出处标注</span>
+      <span class="pill gray">可回答</span></div>
+      <div>
+        <span class="badge ok">微调综合 0.89</span>
+        <span class="badge bad">基线综合 0.54</span>
+      </div>
+    </div>
+    <div class="q">问题：请说明「转班规则」的制度要求，并为结论附上依据。</div>
+    <div class="cols">
+      <div class="col base"><h4><span>基线模型</span><span class="pill orange">0.54</span></h4>
+        <div class="answer">根据提供的资料，&quot;转班规则&quot;的制度要求如下：
+
+1. 开课前 7 个自然日内可以申请免费转班一次。
+2. 开课后申请转班的，按剩余课时折算差价，并收取 100 元转班服务费。
+
+这些规定表明了转班的流程和收费标准。具体来说：
+- 在开课前 7 个自然日内，学员可以通过申请免费转班来获得额外的时间和资源。
+- 如果学员选择在开课后申请转班，他们需要支付差价，并按照约定的收费标准支付转班服务费。
+
+因此，这个制度要求学员在开课前至少提前 7 天提交转班申请，且在开课后需支付相应的差价和转班服务费。</div>
+      </div>
+      <div class="col tuned"><h4><span>微调模型</span><span class="pill green">0.89</span></h4>
+        <div class="answer">根据资料，开课前 7 个自然日可免费转班一次，开课后不可再保留原班级名额。
+关键要点：
+1. 开课前 7 个自然日内可免费转班一次
+2. 开课后不可再保留原班级名额
+3. 开课后转班需折算差价并收取 100 元转班服务费
+原文摘录：“开课前 7 个自然日内可申请免费转班一次，转班后不再保留原班级名额”
+依据：[KB-EDU-001-1.3]</div>
+      </div>
+    </div>
+    <div class="cap">标准依据：KB-EDU-001-1.3　|　
+      引用：KB-EDU-001-1.3　|　
+      要点覆盖 0.75　|　数字忠实 1.00　|　格式 1
+    </div>
+  </div>
+  <div class="sample">
+    <div class="head">
+      <div><span class="pill blue">资料不足拒答</span>
+      <span class="pill gray">资料不足</span></div>
+      <div>
+        <span class="badge bad">微调综合 0.00</span>
+        <span class="badge bad">基线综合 0.00</span>
+      </div>
+    </div>
+    <div class="q">问题：电子证书一般多久能发下来？</div>
+    <div class="cols">
+      <div class="col base"><h4><span>基线模型</span><span class="pill orange">0.00</span></h4>
+        <div class="answer">根据您提供的资料，电子证书通常会在结业审核通过后30个工作日内发放。</div>
+      </div>
+      <div class="col tuned"><h4><span>微调模型</span><span class="pill orange">0.00</span></h4>
+        <div class="answer">结论：电子证书在结业审核通过后 30 个工作日内发放。
+关键要点：
+1. 电子证书在结业审核通过后 30 个工作日内发放
+2. 发放时间为电子证书在结业审核通过后 30 个工作日内
+3. 电子证书在结业审核通过后 3 个工作日内发放
+依据：[KB-EDU-099-9.3]
+办理建议：关注课程进度，及时提交作业。</div>
+      </div>
+    </div>
+    <div class="cap">标准依据：无（应拒答）　|　
+      引用：KB-EDU-099-9.3　|　
+      要点覆盖 0.00　|　数字忠实 1.00　|　格式 0
+    </div>
+  </div>
+  <div class="sample">
+    <div class="head">
+      <div><span class="pill blue">多片段信息整合</span>
+      <span class="pill gray">可回答</span></div>
+      <div>
+        <span class="badge ok">微调综合 0.93</span>
+        <span class="badge bad">基线综合 0.45</span>
+      </div>
+    </div>
+    <div class="q">问题：我需要先处理「退费与发票处理」再处理「不可退费情形」吗？请说明相关规则。</div>
+    <div class="cols">
+      <div class="col base"><h4><span>基线模型</span><span class="pill orange">0.45</span></h4>
+        <div class="answer">根据您提供的资料，您的流程是正确的。首先，您需要按照规定处理「不可退费情形」，然后才能进行「退费与发票处理」。具体来说：
+
+1. **不可退费情形**：课程已结课；已开具发票且跨月申请；赠送课时部分；超过退费申请期限；因学员个人原因被平台终止服务。这些情况均不适用退款。
+
+2. **退费与发票处理**：
+   - 如果申请全额退费，需要先退回已开具的发票。
+   - 如果发票已认证抵扣，需要提供红字发票信息。
+   - 部分退费情况下，按实际支付金额重新开具发票。
+
+所以，您的步骤如下：
+
+1. 先处理「不可退费情形」。
+2. 然后处理「退费与发票处理」。</div>
+      </div>
+      <div class="col tuned"><h4><span>微调模型</span><span class="pill green">0.93</span></h4>
+        <div class="answer">综合说明：
+1. 全额退款需先退回发票，部分退款按实际支付金额重新开具发票（依据：[KB-EDU-006-6.5]）
+2. 已结课、发票跨月、赠送课时、超期申请等情形不予退费（依据：[KB-EDU-002-2.4]）
+处理建议：两项规定需同时满足，请先按「退费与发票处理」核对适用条件，再按「不可退费情形」确认后续办理要求；任一条件不具备时应先补齐材料或联系班主任确认。</div>
+      </div>
+    </div>
+    <div class="cap">标准依据：KB-EDU-006-6.5、KB-EDU-002-2.4　|　
+      引用：KB-EDU-006-6.5、KB-EDU-002-2.4　|　
+      要点覆盖 1.00　|　数字忠实 1.00　|　格式 1
+    </div>
+  </div></div>
+<div class="footer">实验环境：Windows · Python 3.12 · PyTorch CPU · Qwen2.5-0.5B-Instruct · LoRA (r=16)　|　数据与指标均可通过 scripts/ 目录脚本复现</div>
+</div>
+</body>
+</html>

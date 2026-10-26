@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据集构建 · 微调实验报告</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="mark">知</span><span>知行学堂 · 知识库问答模型微调实验</span></div>
+  <nav class="nav"><a href="index.html" class="">总览</a><a href="dataset.html" class="active">数据集</a><a href="training.html" class="">训练</a><a href="evaluation.html" class="">评测</a><a href="samples.html" class="">样例对比</a></nav>
+</div>
+<div class="page">
+<div class="hero">
+  <h1>数据集构建</h1>
+  <p>围绕 5 个能力维度构造 560 条指令数据，覆盖可回答、资料冲突、资料缺失三类场景</p>
+  <div class="tags"><span class="tag">6 篇制度文档</span><span class="tag">37 个知识条款</span><span class="tag">420 训练 / 60 验证 / 80 测试</span><span class="tag">5 能力维度</span></div>
+</div>
+<div class="kpis">
+  <div class="kpi"><div class="label">训练集</div><div class="value">420</div><div class="sub">75%</div></div>
+  <div class="kpi"><div class="label">验证集</div><div class="value">60</div><div class="sub">10.7%</div></div>
+  <div class="kpi"><div class="label">测试集</div><div class="value">80</div><div class="sub">14.3%</div></div>
+  <div class="kpi"><div class="label">知识文档</div><div class="value">6</div><div class="sub">37 个条款</div></div>
+  <div class="kpi"><div class="label">可回答样本</div><div class="value">80%</div><div class="sub">其余为拒答样本</div></div>
+  <div class="kpi"><div class="label">平均上下文字数</div><div class="value">470.0</div><div class="sub">检索片段 + 问题</div></div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>能力维度分布</h2>
+  <p class="desc">每个能力维度独立生成 112 条样本，按 84 / 12 / 16 切分，保证测试集覆盖全部能力。</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>样本数量（按能力）</h3>
+      <div class="bar-row"><span>行业术语与格式适配</span><span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span><strong>112 条</strong></div><div class="bar-row"><span>检索内容忠实回答</span><span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span><strong>112 条</strong></div><div class="bar-row"><span>多片段信息整合</span><span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span><strong>112 条</strong></div><div class="bar-row"><span>证据引用与出处标注</span><span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span><strong>112 条</strong></div><div class="bar-row"><span>资料不足拒答</span><span class="bar-track"><span class="bar-fill" style="width:100.0%"></span></span><strong>112 条</strong></div>
+      <div class="cap">术语与格式 84 条训练样本中包含制度解释与办理步骤两种回答格式</div>
+    </div>
+    <div class="card" style="display:flex;align-items:center;gap:26px;justify-content:center">
+      <svg width="150" height="150" viewBox="0 0 140 140">
+  <circle cx="70" cy="70" r="54" fill="none" stroke="#eef2f7" stroke-width="16"/>
+  <circle cx="70" cy="70" r="54" fill="none" stroke="#16a34a" stroke-width="16"
+     stroke-dasharray="271.4 339.3" stroke-linecap="round" transform="rotate(-90 70 70)"/>
+  <text x="70" y="66" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">80%</text>
+  <text x="70" y="86" text-anchor="middle" font-size="11" fill="#64748b">可回答</text>
+</svg>
+      <div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:8px">可回答 / 拒答比例</div>
+        <div style="color:#64748b;font-size:13px;line-height:1.9">
+          可回答样本 448 条（80%）<br>
+          拒答样本 112 条（20%）<br>
+          其中资料不足 100 条、资料冲突 12 条<br>
+          测试集含冲突样本 3 条
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>数据构成与长度统计</h2>
+  <div class="grid g3">
+    <div class="card"><h3>上下文长度</h3><div class="kv">
+      <span class="k">平均</span><span><strong>470.0</strong> 字</span>
+      <span class="k">最短</span><span>283 字</span>
+      <span class="k">最长</span><span>607 字</span>
+      <span class="k">结构</span><span>2-4 个检索片段</span>
+    </div></div>
+    <div class="card"><h3>答案长度</h3><div class="kv">
+      <span class="k">平均</span><span><strong>155.3</strong> 字</span>
+      <span class="k">最短</span><span>76 字</span>
+      <span class="k">最长</span><span>216 字</span>
+      <span class="k">格式</span><span>结论 + 要点 + 依据</span>
+    </div></div>
+    <div class="card"><h3>数据质检</h3><div class="kv">
+      <span class="k">引用可追溯</span><span><span class="pill green">通过</span></span>
+      <span class="k">拒答表述</span><span><span class="pill green">通过</span></span>
+      <span class="k">训练/测试重叠</span><span><span class="pill green">0 条</span></span>
+      <span class="k">重复样本 ID</span><span><span class="pill green">0 条</span></span>
+    </div></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2><span class="dot"></span>训练数据示例</h2>
+  <p class="desc">system 中固定约束「只依据资料回答 + 标注引用 + 资料不足拒答」，user 提供检索片段与问题，assistant 为监督答案。</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>行业术语与格式适配</h3>
+      <div class="chat user"><strong>问题：</strong>请说明平台关于「课程资料发放」的具体要求。</div>
+      <div class="chat answer"><strong>标准答案：</strong>结论：电子讲义在开课后 3 个工作日内发放，纸质教材需提前 5 个工作日申请。
+关键要点：
+1. 课程讲义以 PDF 形式发放
+2. 开课后 3 个工作日内上传至资料区
+3. 纸质教材需提前 5 个工作日申请，工本费 50 元
+依据：[KB-EDU-001-1.4]
+办理建议：在课程资料区下载讲义，纸质教材在开课前申请。</div>
+    </div>
+    <div class="card">
+      <h3>检索内容忠实回答</h3>
+      <div class="chat user"><strong>问题：</strong>「证书类型与费用」中涉及的时间限制和金额标准分别是什么？</div>
+      <div class="chat answer"><strong>标准答案：</strong>结论：电子证书免费，纸质证书收取 30 元工本费并支持顺丰到付。
+关键要点：
+1. 电子证书免费并可在线下载
+2. 纸质证书需支付 30 元工本费
+3. 纸质证书支持顺丰到付
+4. 证书信息以报名姓名为准
+依据：[KB-EDU-005-5.2]
+办理建议：结业后先在个人中心下载电子证书，需要纸质版再申请。</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">实验环境：Windows · Python 3.12 · PyTorch CPU · Qwen2.5-0.5B-Instruct · LoRA (r=16)　|　数据与指标均可通过 scripts/ 目录脚本复现</div>
+</div>
+</body>
+</html>

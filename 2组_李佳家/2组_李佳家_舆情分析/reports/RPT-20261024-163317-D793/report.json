@@ -1,0 +1,2643 @@
+{
+  "report_id": "RPT-20261024-163317-D793",
+  "topic": "预制菜进校园",
+  "query": "预制菜进校园",
+  "category": "食品安全",
+  "created_at": "2026-10-24T16:33:17+08:00",
+  "generated_label": "2026-10-24 16:33:17",
+  "source_types": [
+    "news",
+    "image",
+    "video",
+    "forum_post",
+    "internal_data"
+  ],
+  "source_type_labels": [
+    "新闻媒体",
+    "图片素材",
+    "视频内容",
+    "论坛帖子",
+    "内部数据"
+  ],
+  "source_count": 48,
+  "agent_steps": [
+    {
+      "index": 1,
+      "key": "collect",
+      "title": "多来源检索",
+      "agent": "collector",
+      "app_name": "topic_search",
+      "status": "success",
+      "started_at": "2026-10-24T16:33:17+08:00",
+      "duration_ms": 39.6,
+      "summary": "命中 48 条来源，覆盖 新闻媒体 14、图片素材 8、视频内容 8、论坛帖子 10、内部数据 8",
+      "metrics": {
+        "source_count": 48,
+        "source_counts": {
+          "news": 14,
+          "image": 8,
+          "video": 8,
+          "forum_post": 10,
+          "internal_data": 8
+        },
+        "span_days": 28.6,
+        "query": "预制菜进校园"
+      }
+    },
+    {
+      "index": 2,
+      "key": "multimedia",
+      "title": "多媒体解析",
+      "agent": "multimedia",
+      "app_name": "multimedia_search",
+      "status": "success",
+      "started_at": "2026-10-24T16:33:17+08:00",
+      "duration_ms": 31.4,
+      "summary": "解析 16 个多媒体素材（图片 8 / 视频 8），OCR 8 条、ASR 8 条",
+      "metrics": {
+        "asset_count": 16,
+        "image_count": 8,
+        "video_count": 8,
+        "ocr_count": 8,
+        "asr_count": 8,
+        "total_duration_seconds": 51392
+      }
+    },
+    {
+      "index": 3,
+      "key": "insight",
+      "title": "洞察分析",
+      "agent": "analyzer",
+      "app_name": "insight_analysis",
+      "status": "success",
+      "started_at": "2026-10-24T16:33:17+08:00",
+      "duration_ms": 36.3,
+      "summary": "情绪：正 29.2% / 中 33.3% / 负 37.5%；观点组 7 个；风险 较高（55.0）",
+      "metrics": {
+        "opinion_groups": 7,
+        "risk_count": 5,
+        "risk_score": 55.0,
+        "negative_ratio": 37.5,
+        "keyword_count": 12
+      }
+    },
+    {
+      "index": 4,
+      "key": "report",
+      "title": "报告生成",
+      "agent": "reporter",
+      "app_name": "report_writer",
+      "status": "success",
+      "started_at": "2026-10-24T16:33:17+08:00",
+      "duration_ms": 178.0,
+      "summary": "报告 RPT-20261024-163317-D793 生成完成：8 个章节，来源 48 条，引用 10 条重点证据",
+      "metrics": {
+        "sections": 8,
+        "evidence_count": 10,
+        "source_count": 48
+      }
+    },
+    {
+      "index": 5,
+      "key": "graph",
+      "title": "图谱构建",
+      "agent": "graph",
+      "app_name": "report_writer",
+      "status": "success",
+      "started_at": "2026-10-24T16:33:17+08:00",
+      "duration_ms": 149.1,
+      "summary": "图谱构建完成：51 个节点、91 条关系，覆盖 18 条来源",
+      "metrics": {
+        "node_count": 51,
+        "edge_count": 91,
+        "source_node_count": 18
+      }
+    }
+  ],
+  "event_overview": {
+    "text": "近期，多地家长在社交平台反映学校午餐使用复热即食类预制菜，与校方“现做现供”的说法不符，引发对校园餐供应链、标签公示和家长知情权的集中讨论。事件从本地家长论坛的一条配图帖起步，经短视频探店、主流媒体调查和监管部门回应逐步升级，形成“家长质疑—媒体追问—监管表态—制度修补”的完整舆情链路。\n\n本报告覆盖近 30 天内新闻媒体、图片素材、视频内容、论坛帖子与内部业务数据五类来源，围绕供餐模式、标签标识、监管动作、家长诉求和传播路径展开分析，所有结论均标注可回溯的来源编号。\n\n本次检索于 2026-10-24 16:33 执行，命中 48 条来源，覆盖 5 类传播渠道，时间跨度为 2026-09-25 至 2026-10-24（28.6 天）。来源平均可信度 0.82，平均影响力 75.5，负面来源占比 37.5%。",
+    "paragraphs": [
+      "近期，多地家长在社交平台反映学校午餐使用复热即食类预制菜，与校方“现做现供”的说法不符，引发对校园餐供应链、标签公示和家长知情权的集中讨论。事件从本地家长论坛的一条配图帖起步，经短视频探店、主流媒体调查和监管部门回应逐步升级，形成“家长质疑—媒体追问—监管表态—制度修补”的完整舆情链路。",
+      "本报告覆盖近 30 天内新闻媒体、图片素材、视频内容、论坛帖子与内部业务数据五类来源，围绕供餐模式、标签标识、监管动作、家长诉求和传播路径展开分析，所有结论均标注可回溯的来源编号。",
+      "本次检索于 2026-10-24 16:33 执行，命中 48 条来源，覆盖 5 类传播渠道，时间跨度为 2026-09-25 至 2026-10-24（28.6 天）。来源平均可信度 0.82，平均影响力 75.5，负面来源占比 37.5%。"
+    ],
+    "refs": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "citation": "[S01][S02][S03][S04][S05]",
+    "stats": {
+      "source_count": 48,
+      "type_counts": {
+        "news": 14,
+        "image": 8,
+        "video": 8,
+        "forum_post": 10,
+        "internal_data": 8
+      },
+      "type_coverage": 5,
+      "date_range": {
+        "earliest": "2026-09-25T20:33:17+08:00",
+        "latest": "2026-10-24T10:03:17+08:00"
+      },
+      "span_days": 28.6,
+      "avg_influence": 75.5,
+      "avg_credibility": 0.82,
+      "negative_ratio": 37.5,
+      "channel_top": "新闻媒体",
+      "risk_score": 55.0,
+      "risk_level": "较高",
+      "category": "食品安全"
+    }
+  },
+  "timeline": [
+    {
+      "id": "E01",
+      "time": "2026-09-25T20:33:17+08:00",
+      "date_label": "09-25",
+      "time_label": "20:33",
+      "datetime_label": "2026-09-25 20:33",
+      "title": "家长论坛首曝“料理包午餐”",
+      "description": "家长在本地论坛发布配餐包装照片，标签显示“复热即食”，两天内回复近 400 条，成为本轮舆情起点。",
+      "importance": "high",
+      "refs": [
+        "S05",
+        "S19"
+      ],
+      "source_ids": [
+        "F01",
+        "I01"
+      ],
+      "entity_ids": [
+        "ORG08"
+      ]
+    },
+    {
+      "id": "E02",
+      "time": "2026-09-27T14:33:17+08:00",
+      "date_label": "09-27",
+      "time_label": "14:33",
+      "datetime_label": "2026-09-27 14:33",
+      "title": "短视频探访中央厨房播放量破千万",
+      "description": "博主以第一视角拍摄中央厨房净菜与配送流程，视频播放量达 1200 万，评论区围绕“净菜还是料理包”激烈争论。",
+      "importance": "high",
+      "refs": [
+        "S09",
+        "S29"
+      ],
+      "source_ids": [
+        "V02",
+        "I06"
+      ],
+      "entity_ids": [
+        "ORG09",
+        "MED04"
+      ]
+    },
+    {
+      "id": "E03",
+      "time": "2026-09-29T18:33:17+08:00",
+      "date_label": "09-29",
+      "time_label": "18:33",
+      "datetime_label": "2026-09-29 18:33",
+      "title": "市教育局明确“严禁预制菜”",
+      "description": "市教育局通报允许中央厨房配送净菜、严禁复热即食类预制菜肴，要求全市学校一周内完成自查。",
+      "importance": "high",
+      "refs": [
+        "S18",
+        "S33"
+      ],
+      "source_ids": [
+        "N03",
+        "F02"
+      ],
+      "entity_ids": [
+        "ORG04",
+        "ORG08"
+      ]
+    },
+    {
+      "id": "E04",
+      "time": "2026-10-02T16:33:17+08:00",
+      "date_label": "10-02",
+      "time_label": "16:33",
+      "datetime_label": "2026-10-02 16:33",
+      "title": "省教育厅部署一个月专项检查",
+      "description": "专项检查覆盖全省中小学、幼儿园及校外供餐单位，重点核查供应商资质、留样制度与明厨亮灶运行情况。",
+      "importance": "medium",
+      "refs": [
+        "S32",
+        "S06"
+      ],
+      "source_ids": [
+        "N04",
+        "N05"
+      ],
+      "entity_ids": [
+        "ORG03",
+        "ORG04",
+        "ORG02"
+      ]
+    },
+    {
+      "id": "E05",
+      "time": "2026-10-04T16:33:17+08:00",
+      "date_label": "10-04",
+      "time_label": "16:33",
+      "datetime_label": "2026-10-04 16:33",
+      "title": "家委会联名提出五项诉求",
+      "description": "三年级家委会发布联名信，要求公开供应商、公示合同、每月检测、家长陪餐和建立听证机制，236 位家长签名。",
+      "importance": "high",
+      "refs": [
+        "S04",
+        "S23"
+      ],
+      "source_ids": [
+        "F03",
+        "I08"
+      ],
+      "entity_ids": [
+        "PER02",
+        "ORG08"
+      ]
+    },
+    {
+      "id": "E06",
+      "time": "2026-10-14T16:33:17+08:00",
+      "date_label": "10-14",
+      "time_label": "16:33",
+      "datetime_label": "2026-10-14 16:33",
+      "title": "教育部表态“不宜推广进校园”",
+      "description": "教育部相关负责人表示预制菜尚无统一国家标准，对进校园应持审慎态度、不宜推广，话题声量 6 小时内增长 4.8 倍。",
+      "importance": "high",
+      "refs": [
+        "S02",
+        "S01",
+        "S03"
+      ],
+      "source_ids": [
+        "N02",
+        "V01",
+        "F06"
+      ],
+      "entity_ids": [
+        "ORG01",
+        "PER01"
+      ]
+    },
+    {
+      "id": "E07",
+      "time": "2026-10-19T16:33:17+08:00",
+      "date_label": "10-19",
+      "time_label": "16:33",
+      "datetime_label": "2026-10-19 16:33",
+      "title": "抽检结果公布：合格率 98.6%",
+      "description": "市疾控中心公布 156 批次抽检结果，微生物指标全部合格，2 批次预包装原料标签标识不合规并已下架。",
+      "importance": "medium",
+      "refs": [
+        "S11",
+        "S30",
+        "S27"
+      ],
+      "source_ids": [
+        "N09",
+        "I05",
+        "D05"
+      ],
+      "entity_ids": [
+        "ORG05",
+        "ORG09"
+      ]
+    },
+    {
+      "id": "E08",
+      "time": "2026-10-23T10:33:17+08:00",
+      "date_label": "10-23",
+      "time_label": "10:33",
+      "datetime_label": "2026-10-23 10:33",
+      "title": "省教育厅建立陪餐与公示制度",
+      "description": "省教育厅要求各校建立家长陪餐预约、供应商信息公示、检测报告月度公开三项制度，并纳入年度考核。",
+      "importance": "high",
+      "refs": [
+        "S16",
+        "S22"
+      ],
+      "source_ids": [
+        "N13",
+        "N07"
+      ],
+      "entity_ids": [
+        "ORG03",
+        "ORG04"
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "source_type": "news",
+      "label": "新闻媒体",
+      "count": 14,
+      "ratio": 29.2,
+      "sentiment": {
+        "positive": 6,
+        "neutral": 6,
+        "negative": 2
+      },
+      "sentiment_ratios": {
+        "positive": 42.9,
+        "neutral": 42.9,
+        "negative": 14.3
+      },
+      "negative_ratio": 14.3,
+      "avg_influence": 79.9,
+      "reach": 1118.0,
+      "top_sources": [
+        "中国教育报",
+        "澎湃新闻"
+      ],
+      "refs": [
+        "S02",
+        "S06"
+      ]
+    },
+    {
+      "source_type": "forum_post",
+      "label": "论坛帖子",
+      "count": 10,
+      "ratio": 20.8,
+      "sentiment": {
+        "positive": 2,
+        "neutral": 1,
+        "negative": 7
+      },
+      "sentiment_ratios": {
+        "positive": 20.0,
+        "neutral": 10.0,
+        "negative": 70.0
+      },
+      "negative_ratio": 70.0,
+      "avg_influence": 75.0,
+      "reach": 750.0,
+      "top_sources": [
+        "微博",
+        "城市家长论坛"
+      ],
+      "refs": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "source_type": "video",
+      "label": "视频内容",
+      "count": 8,
+      "ratio": 16.7,
+      "sentiment": {
+        "positive": 2,
+        "neutral": 3,
+        "negative": 3
+      },
+      "sentiment_ratios": {
+        "positive": 25.0,
+        "neutral": 37.5,
+        "negative": 37.5
+      },
+      "negative_ratio": 37.5,
+      "avg_influence": 76.4,
+      "reach": 611.0,
+      "top_sources": [
+        "央视新闻",
+        "抖音"
+      ],
+      "refs": [
+        "S01",
+        "S09"
+      ]
+    },
+    {
+      "source_type": "internal_data",
+      "label": "内部数据",
+      "count": 8,
+      "ratio": 16.7,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 4,
+        "negative": 3
+      },
+      "sentiment_ratios": {
+        "positive": 12.5,
+        "neutral": 50.0,
+        "negative": 37.5
+      },
+      "negative_ratio": 37.5,
+      "avg_influence": 73.0,
+      "reach": 584.0,
+      "top_sources": [
+        "12345政务热线",
+        "舆情监测中心"
+      ],
+      "refs": [
+        "S12",
+        "S17"
+      ]
+    },
+    {
+      "source_type": "image",
+      "label": "图片素材",
+      "count": 8,
+      "ratio": 16.7,
+      "sentiment": {
+        "positive": 3,
+        "neutral": 2,
+        "negative": 3
+      },
+      "sentiment_ratios": {
+        "positive": 37.5,
+        "neutral": 25.0,
+        "negative": 37.5
+      },
+      "negative_ratio": 37.5,
+      "avg_influence": 70.2,
+      "reach": 562.0,
+      "top_sources": [
+        "城市家长论坛",
+        "抖音"
+      ],
+      "refs": [
+        "S19",
+        "S23"
+      ]
+    }
+  ],
+  "opinions": [
+    {
+      "role": "监管部门",
+      "stance": "理性观望",
+      "tone": "neutral",
+      "count": 12,
+      "sentiment": {
+        "positive": 4,
+        "neutral": 5,
+        "negative": 3
+      },
+      "sentiment_ratios": {
+        "positive": 33.3,
+        "neutral": 41.7,
+        "negative": 25.0
+      },
+      "summary": "在标准体系尚不健全的阶段，校园餐应以现做现供为主，预制菜不宜大规模推广。；校园餐监管重点应从“是否预制”转向“原料可追溯、标签可核查、过程可监督”。（监管部门群体共 12 条来源，负面占比 25.0%）",
+      "highlights": [
+        {
+          "ref": "S02",
+          "source_id": "N02",
+          "text": "对预制菜进校园应持审慎态度，不宜推广。",
+          "position": "发布会问答第3问",
+          "title": "教育部：预制菜不宜推广进校园 应审慎对待",
+          "source": "中国教育报"
+        },
+        {
+          "ref": "S08",
+          "source_id": "N01",
+          "text": "各地要对校外供餐单位使用的预包装菜肴原料开展重点检查，督促其如实标注并公示。",
+          "position": "通知第2条",
+          "title": "市场监管总局部署秋季校园食品安全专项检查 严把原料采购关",
+          "source": "国家市场监督管理总局"
+        },
+        {
+          "ref": "S10",
+          "source_id": "N12",
+          "text": "留样及病例样本检测结果均为阴性，未发现食源性致病因素。",
+          "position": "情况通报第2段",
+          "title": "网传学生餐后不适 官方通报：未检出食源性致病因素",
+          "source": "市卫生健康委员会"
+        }
+      ],
+      "refs": [
+        "S02",
+        "S08",
+        "S10",
+        "S11"
+      ],
+      "source_types": [
+        "image",
+        "internal_data",
+        "news",
+        "video"
+      ]
+    },
+    {
+      "role": "家长",
+      "stance": "质疑 / 担忧",
+      "tone": "negative",
+      "count": 11,
+      "sentiment": {
+        "positive": 2,
+        "neutral": 1,
+        "negative": 8
+      },
+      "sentiment_ratios": {
+        "positive": 18.2,
+        "neutral": 9.1,
+        "negative": 72.7
+      },
+      "summary": "诉求具体、程序清晰，若处置不当可能从网络讨论转向线下行动。；首帖提供了可传播的视觉证据，迅速把个体体验转化为公共议题。（家长群体共 11 条来源，负面占比 72.7%）",
+      "highlights": [
+        {
+          "ref": "S04",
+          "source_id": "F03",
+          "text": "我们不要口头保证，只要可以查证的材料。",
+          "position": "联名信第2条",
+          "title": "家委会联名信：要求公开供餐企业和检测报告",
+          "source": "城市家长论坛"
+        },
+        {
+          "ref": "S05",
+          "source_id": "F01",
+          "text": "孩子说饭是倒出来加热的，我一开始还不信。",
+          "position": "主帖第1段",
+          "title": "孩子说午餐是“料理包”，有图有真相",
+          "source": "城市家长论坛"
+        },
+        {
+          "ref": "S13",
+          "source_id": "F10",
+          "text": "明天上午十点，区教育局门口递交材料。",
+          "position": "群公告",
+          "title": "家长维权群：已有236位家长接龙要求听证",
+          "source": "微信家长群"
+        }
+      ],
+      "refs": [
+        "S04",
+        "S05",
+        "S13",
+        "S19"
+      ],
+      "source_types": [
+        "forum_post",
+        "image"
+      ]
+    },
+    {
+      "role": "媒体",
+      "stance": "质疑 / 担忧",
+      "tone": "negative",
+      "count": 8,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 1,
+        "negative": 6
+      },
+      "sentiment_ratios": {
+        "positive": 12.5,
+        "neutral": 12.5,
+        "negative": 75.0
+      },
+      "summary": "主流媒体调查将议题从网络争论推向监管问责，是传播峰值的关键节点。；平台话题聚合放大了情绪共振，官方表态成为二次传播的素材。（媒体群体共 8 条来源，负面占比 75.0%）",
+      "highlights": [
+        {
+          "ref": "S01",
+          "source_id": "V01",
+          "text": "家长有权知道孩子吃的是什么，这不该是一道选择题。",
+          "position": "第18分钟旁白",
+          "title": "央视新闻调查：预制菜如何进入校园餐桌",
+          "source": "央视新闻"
+        },
+        {
+          "ref": "S03",
+          "source_id": "F06",
+          "text": "3.2亿阅读，家长们的焦虑藏不住了。",
+          "position": "话题导语",
+          "title": "微博话题#预制菜进校园#阅读量3.2亿",
+          "source": "微博"
+        },
+        {
+          "ref": "S06",
+          "source_id": "N05",
+          "text": "公示栏里只有一周菜谱，看不到供餐企业是谁，也看不到检测报告。",
+          "position": "第3段（家长采访）",
+          "title": "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+          "source": "澎湃新闻"
+        }
+      ],
+      "refs": [
+        "S01",
+        "S03",
+        "S06",
+        "S07"
+      ],
+      "source_types": [
+        "forum_post",
+        "image",
+        "news",
+        "video"
+      ]
+    },
+    {
+      "role": "内部",
+      "stance": "理性观望",
+      "tone": "neutral",
+      "count": 5,
+      "sentiment": {
+        "positive": 0,
+        "neutral": 4,
+        "negative": 1
+      },
+      "sentiment_ratios": {
+        "positive": 0.0,
+        "neutral": 80.0,
+        "negative": 20.0
+      },
+      "summary": "权威表态既是情绪出口也是二次传播引爆点，需提前准备解读材料。；满意度总体可控，但不满意集中在制度执行环节，改进空间明确。（内部群体共 5 条来源，负面占比 20.0%）",
+      "highlights": [
+        {
+          "ref": "S17",
+          "source_id": "D03",
+          "text": "峰值时段每10分钟新增讨论约1.2万条。",
+          "position": "周报第4段",
+          "title": "内部舆情周报：话题传播峰值出现在教育部表态后",
+          "source": "舆情监测中心"
+        },
+        {
+          "ref": "S25",
+          "source_id": "D08",
+          "text": "不满意样本中，67%提到公示不及时。",
+          "position": "调查报告第3部分",
+          "title": "家长满意度调查：满意62% 不满意21% 中立17%",
+          "source": "市教育局"
+        },
+        {
+          "ref": "S31",
+          "source_id": "D04",
+          "text": "绿源餐饮服务31所学校，占中央厨房供餐份额的46%。",
+          "position": "台账汇总表",
+          "title": "供应商台账：本市校园餐供餐企业23家 中央厨房6家",
+          "source": "市教育局后勤中心"
+        }
+      ],
+      "refs": [
+        "S17",
+        "S25",
+        "S31",
+        "S38"
+      ],
+      "source_types": [
+        "internal_data"
+      ]
+    },
+    {
+      "role": "学校",
+      "stance": "认可 / 支持",
+      "tone": "positive",
+      "count": 5,
+      "sentiment": {
+        "positive": 5,
+        "neutral": 0,
+        "negative": 0
+      },
+      "sentiment_ratios": {
+        "positive": 100.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "summary": "开放日与家长陪餐能有效降低信息不对称，但需要制度化而非一次性活动。；长时段直播提供了可验证的过程证据，但需要配套问题回应机制。（学校群体共 5 条来源，负面占比 0.0%）",
+      "highlights": [
+        {
+          "ref": "S22",
+          "source_id": "N07",
+          "text": "家长可以随时预约陪餐，每周菜单和快检结果都会贴在校门口。",
+          "position": "第4段（校长）",
+          "title": "家长开放日走进配餐车间 现场查看检测报告",
+          "source": "人民网"
+        },
+        {
+          "ref": "S24",
+          "source_id": "V03",
+          "text": "镜头不关，家长随时可以看。",
+          "position": "直播第3小时",
+          "title": "后厨直播回放：配餐全流程12小时",
+          "source": "本地融媒体中心"
+        },
+        {
+          "ref": "S45",
+          "source_id": "V08",
+          "text": "从下周开始，每周五公示菜单和检测结果，欢迎家长随时来陪餐。",
+          "position": "录音第14分钟",
+          "title": "家长会现场录音片段：校方承诺每周公示菜单",
+          "source": "城市家长论坛"
+        }
+      ],
+      "refs": [
+        "S22",
+        "S24",
+        "S45",
+        "S46"
+      ],
+      "source_types": [
+        "forum_post",
+        "image",
+        "news",
+        "video"
+      ]
+    },
+    {
+      "role": "专家",
+      "stance": "理性观望",
+      "tone": "neutral",
+      "count": 4,
+      "sentiment": {
+        "positive": 0,
+        "neutral": 4,
+        "negative": 0
+      },
+      "sentiment_ratios": {
+        "positive": 0.0,
+        "neutral": 100.0,
+        "negative": 0.0
+      },
+      "summary": "争议的核心是概念混用，应尽快明确校园餐场景下的预制菜定义与标识规则。；先建负面清单、再谈分类使用，是当前最可行的过渡方案。（专家群体共 4 条来源，负面占比 0.0%）",
+      "highlights": [
+        {
+          "ref": "S15",
+          "source_id": "N08",
+          "text": "净菜不等于预制菜，监管和舆论都不应把两者混为一谈。",
+          "position": "第2段",
+          "title": "专家解读：中央厨房净菜与预制菜不是一回事",
+          "source": "中国新闻网"
+        },
+        {
+          "ref": "S21",
+          "source_id": "V07",
+          "text": "没有标准就没有边界，校园餐不能靠企业自觉。",
+          "position": "访谈第9分钟",
+          "title": "专家访谈：预制菜国标缺失下的校园选择",
+          "source": "澎湃新闻"
+        },
+        {
+          "ref": "S40",
+          "source_id": "V06",
+          "text": "热量够了，但钠含量超标20%，蔬菜只有一种。",
+          "position": "视频第6分钟",
+          "title": "B站UP主实测校园餐：营养搭配达标吗",
+          "source": "哔哩哔哩"
+        }
+      ],
+      "refs": [
+        "S15",
+        "S21",
+        "S40",
+        "S47"
+      ],
+      "source_types": [
+        "forum_post",
+        "news",
+        "video"
+      ]
+    },
+    {
+      "role": "企业",
+      "stance": "认可 / 支持",
+      "tone": "positive",
+      "count": 2,
+      "sentiment": {
+        "positive": 2,
+        "neutral": 0,
+        "negative": 0
+      },
+      "sentiment_ratios": {
+        "positive": 100.0,
+        "neutral": 0.0,
+        "negative": 0.0
+      },
+      "summary": "企业以开放中央厨房和批次追溯回应质疑，强调校园餐为净菜现炒而非复热预制菜。；标准化净菜加工流程是回应“料理包”质疑的直接证据。（企业群体共 2 条来源，负面占比 0.0%）",
+      "highlights": [
+        {
+          "ref": "S28",
+          "source_id": "N06",
+          "text": "我们的校园餐是净菜配送、到校现炒，每批次原料都可以追溯到供应商。",
+          "position": "第2段（企业负责人）",
+          "title": "供餐企业开放中央厨房：从净菜到餐桌全程可追溯",
+          "source": "新华网"
+        },
+        {
+          "ref": "S43",
+          "source_id": "I03",
+          "text": "净菜当天配送、当天使用，不添加防腐剂。",
+          "position": "图片说明",
+          "title": "中央厨房净菜加工线现场图",
+          "source": "绿源餐饮"
+        }
+      ],
+      "refs": [
+        "S28",
+        "S43"
+      ],
+      "source_types": [
+        "image",
+        "news"
+      ]
+    }
+  ],
+  "sentiment": {
+    "counts": {
+      "positive": 14,
+      "neutral": 16,
+      "negative": 18
+    },
+    "ratios": {
+      "positive": 29.2,
+      "neutral": 33.3,
+      "negative": 37.5
+    },
+    "labels": {
+      "positive": "正向",
+      "neutral": "中性",
+      "negative": "负向"
+    },
+    "total": 48,
+    "judgement": "整体中性偏负：负面占 37.5%、中性 33.3%、正向 29.2%，质疑情绪仍占上风。",
+    "label": "中性偏负",
+    "trend": "近 7 天负面声量较前期回落 24.5 个百分点，情绪趋于缓和。",
+    "trend_direction": "down",
+    "recent_negative_ratio": 26.7,
+    "earlier_negative_ratio": 51.2,
+    "dominant": "negative",
+    "refs": [
+      "S01",
+      "S03",
+      "S08",
+      "S02"
+    ]
+  },
+  "risks": [
+    {
+      "level": "high",
+      "level_label": "高风险",
+      "title": "标签标识与知情权争议持续发酵",
+      "description": "家长的核心诉求已从“是否使用预制菜”转向“为何不公示”，三所学校公示信息不完整、包装标签与校方说法不一致，构成最直接的信任缺口。",
+      "indicators": [
+        "公示信息不完整",
+        "包装标签与口径矛盾",
+        "联名信与听证诉求"
+      ],
+      "refs": [
+        "S06",
+        "S19",
+        "S04",
+        "S12"
+      ],
+      "citation": "[S06][S19][S04][S12]",
+      "related_count": 4,
+      "related_sentiment": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 4
+      },
+      "related_titles": [
+        "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+        "家长群流传的配餐包装照片 标签标注“复热即食”",
+        "家委会联名信：要求公开供餐企业和检测报告"
+      ]
+    },
+    {
+      "level": "high",
+      "level_label": "高风险",
+      "title": "短视频平台放大情绪化传播",
+      "description": "头部探店与调查视频贡献了绝大部分播放量，标题普遍使用“还敢吃吗”等情绪化表达，信息真空期约 6 小时，负面情绪在家长群快速共振。",
+      "indicators": [
+        "头部视频播放量 1200 万",
+        "情绪化标题",
+        "信息真空 6 小时"
+      ],
+      "refs": [
+        "S01",
+        "S09",
+        "S03",
+        "S29"
+      ],
+      "citation": "[S01][S09][S03][S29]",
+      "related_count": 4,
+      "related_sentiment": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 4
+      },
+      "related_titles": [
+        "央视新闻调查：预制菜如何进入校园餐桌",
+        "抖音博主探访中央厨房 播放量破千万",
+        "微博话题#预制菜进校园#阅读量3.2亿"
+      ]
+    },
+    {
+      "level": "medium",
+      "level_label": "中风险",
+      "title": "供餐高度集中带来供应链传导风险",
+      "description": "全市 23 家校园餐供餐企业中 6 家建有中央厨房，绿源餐饮服务 31 所学校、占中央厨房供餐份额 46%，单一企业问题可能传导至数十所学校。",
+      "indicators": [
+        "单一企业覆盖 31 校",
+        "中央厨房份额 46%",
+        "供应商名单未公示"
+      ],
+      "refs": [
+        "S31",
+        "S28",
+        "S06"
+      ],
+      "citation": "[S31][S28][S06]",
+      "related_count": 3,
+      "related_sentiment": {
+        "positive": 1,
+        "neutral": 1,
+        "negative": 1
+      },
+      "related_titles": [
+        "供应商台账：本市校园餐供餐企业23家 中央厨房6家",
+        "供餐企业开放中央厨房：从净菜到餐桌全程可追溯",
+        "记者调查：三所学校食堂公示信息不完整 供应商名单缺失"
+      ]
+    },
+    {
+      "level": "medium",
+      "level_label": "中风险",
+      "title": "学生不适传闻引发次生舆情",
+      "description": "网传学生餐后不适视频在官方通报前扩散，虽经疾控检测排除食源性因素，但回应滞后造成二次质疑。",
+      "indicators": [
+        "短视频首发未核实",
+        "官方回应滞后约 6 小时",
+        "平台标注信息存疑"
+      ],
+      "refs": [
+        "S10",
+        "S14"
+      ],
+      "citation": "[S10][S14]",
+      "related_count": 2,
+      "related_sentiment": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 2
+      },
+      "related_titles": [
+        "网传学生餐后不适 官方通报：未检出食源性致病因素",
+        "网传学生不适视频 校方公布监控与检测结果"
+      ]
+    },
+    {
+      "level": "low",
+      "level_label": "低风险",
+      "title": "标准缺失导致地方执行口径不一",
+      "description": "净菜与预制菜边界、校园餐使用范围尚无统一国标，各地以通知、团体标准先行，执行尺度存在差异。",
+      "indicators": [
+        "国标缺位",
+        "团体标准征求意见中",
+        "各地口径不同"
+      ],
+      "refs": [
+        "S15",
+        "S39",
+        "S32"
+      ],
+      "citation": "[S15][S39][S32]",
+      "related_count": 3,
+      "related_sentiment": {
+        "positive": 0,
+        "neutral": 3,
+        "negative": 0
+      },
+      "related_titles": [
+        "专家解读：中央厨房净菜与预制菜不是一回事",
+        "行业协会就校园餐应用团体标准公开征求意见",
+        "省教育厅部署校园食品安全专项检查 覆盖中小学幼儿园"
+      ]
+    }
+  ],
+  "risk_summary": {
+    "score": 55.0,
+    "level": "medium",
+    "level_label": "较高",
+    "high_count": 2,
+    "medium_count": 2,
+    "low_count": 1,
+    "basis": [
+      "负面来源占比 37.5%",
+      "高风险点 2 项",
+      "论坛负面占比 75.5%",
+      "视频负面占比 42.6%"
+    ],
+    "forum_negative_ratio": 75.5,
+    "video_negative_ratio": 42.6,
+    "dominant_channel": "新闻媒体"
+  },
+  "evidence": [
+    {
+      "rank": 1,
+      "ref": "S01",
+      "source_id": "V01",
+      "title": "央视新闻调查：预制菜如何进入校园餐桌",
+      "url": "https://tv.cctv.com/2026/10/14/VIDE00120261014.shtml",
+      "source": "央视新闻",
+      "author": "《新闻调查》栏目组",
+      "author_role": "媒体",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "published_at": "2026-10-14T16:33:17+08:00",
+      "published_label": "2026-10-14 16:33",
+      "summary": "30分钟调查片走访学校、供餐企业和监管部门，指出部分学校采购环节存在标签公示缺失、家长知情不足等问题，播出后登上热搜。",
+      "quote": "家长有权知道孩子吃的是什么，这不该是一道选择题。",
+      "quote_position": "第18分钟旁白",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "新闻调查",
+        "预制菜",
+        "校园餐",
+        "热搜"
+      ],
+      "influence": 96,
+      "credibility": 0.93
+    },
+    {
+      "rank": 2,
+      "ref": "S02",
+      "source_id": "N02",
+      "title": "教育部：预制菜不宜推广进校园 应审慎对待",
+      "url": "https://www.jyb.cn/rmtzgjyb/202610/t20261015_02.html",
+      "source": "中国教育报",
+      "author": "记者 赵岩",
+      "author_role": "监管部门",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "published_at": "2026-10-15T16:33:17+08:00",
+      "published_label": "2026-10-15 16:33",
+      "summary": "教育部相关负责人在新闻发布会上表示，鉴于预制菜尚无统一国家标准，不宜推广进校园，各地可结合实际制定管理细则。",
+      "quote": "对预制菜进校园应持审慎态度，不宜推广。",
+      "quote_position": "发布会问答第3问",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "教育部",
+        "预制菜",
+        "校园餐",
+        "审慎"
+      ],
+      "influence": 94,
+      "credibility": 0.96
+    },
+    {
+      "rank": 3,
+      "ref": "S03",
+      "source_id": "F06",
+      "title": "微博话题#预制菜进校园#阅读量3.2亿",
+      "url": "https://s.weibo.com/weibo?q=%23%E9%A2%84%E5%88%B6%E8%8F%9C%E8%BF%9B%E6%A0%A1%E5%9B%AD%23",
+      "source": "微博",
+      "author": "话题主持人",
+      "author_role": "媒体",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "published_at": "2026-10-15T02:33:17+08:00",
+      "published_label": "2026-10-15 02:33",
+      "summary": "话题在教育部表态后达到峰值，单小时讨论量12万条，情绪词云以“焦虑”“抵制”“公示”为主。",
+      "quote": "3.2亿阅读，家长们的焦虑藏不住了。",
+      "quote_position": "话题导语",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "微博话题",
+        "阅读量",
+        "峰值",
+        "情绪"
+      ],
+      "influence": 92,
+      "credibility": 0.65
+    },
+    {
+      "rank": 4,
+      "ref": "S04",
+      "source_id": "F03",
+      "title": "家委会联名信：要求公开供餐企业和检测报告",
+      "url": "https://bbs.city-parent.cn/thread/20261006/1421.html",
+      "source": "城市家长论坛",
+      "author": "三年级家委会",
+      "author_role": "家长",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "published_at": "2026-10-04T16:33:17+08:00",
+      "published_label": "2026-10-04 16:33",
+      "summary": "联名信提出五项诉求：公开供应商、公示合同、每月检测、家长陪餐、建立听证机制，已有236位家长签名。",
+      "quote": "我们不要口头保证，只要可以查证的材料。",
+      "quote_position": "联名信第2条",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "联名信",
+        "家委会",
+        "五项诉求",
+        "签名"
+      ],
+      "influence": 90,
+      "credibility": 0.82
+    },
+    {
+      "rank": 5,
+      "ref": "S05",
+      "source_id": "F01",
+      "title": "孩子说午餐是“料理包”，有图有真相",
+      "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+      "source": "城市家长论坛",
+      "author": "@小满妈妈",
+      "author_role": "家长",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "published_at": "2026-09-25T20:33:17+08:00",
+      "published_label": "2026-09-25 20:33",
+      "summary": "帖子称孩子连续三天午餐为复热菜肴，附包装照片和菜单对比，两天内回复近400条，成为本地舆情起点。",
+      "quote": "孩子说饭是倒出来加热的，我一开始还不信。",
+      "quote_position": "主帖第1段",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "料理包",
+        "家长爆料",
+        "午餐",
+        "舆情起点"
+      ],
+      "influence": 88,
+      "credibility": 0.7
+    },
+    {
+      "rank": 6,
+      "ref": "S06",
+      "source_id": "N05",
+      "title": "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+      "url": "https://www.thepaper.cn/newsDetail_forward_29088112",
+      "source": "澎湃新闻",
+      "author": "记者 周然",
+      "author_role": "媒体",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "published_at": "2026-10-05T16:33:17+08:00",
+      "published_label": "2026-10-05 16:33",
+      "summary": "记者走访发现，三所学校公示栏仅展示菜单，未公示供餐企业名称、食品经营许可证和近期检测报告，家长难以核验。",
+      "quote": "公示栏里只有一周菜谱，看不到供餐企业是谁，也看不到检测报告。",
+      "quote_position": "第3段（家长采访）",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "公示",
+        "供应商",
+        "知情权",
+        "调查"
+      ],
+      "influence": 86,
+      "credibility": 0.88
+    },
+    {
+      "rank": 7,
+      "ref": "S07",
+      "source_id": "N11",
+      "title": "多地推行“明厨亮灶” 家长扫码可看后厨直播",
+      "url": "https://news.cctv.com/2026/10/22/ARTI20261022SX001.shtml",
+      "source": "央视新闻",
+      "author": "央视记者 马宁",
+      "author_role": "媒体",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "published_at": "2026-10-21T16:33:17+08:00",
+      "published_label": "2026-10-21 16:33",
+      "summary": "多地学校后厨接入视频平台，家长扫码即可查看加工过程，部分地区还将AI识别未戴口罩、鼠患等风险并自动告警。",
+      "quote": "后厨直播不是作秀，关键是发现问题后能不能立刻整改。",
+      "quote_position": "第5段（监管人员）",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "明厨亮灶",
+        "直播",
+        "AI识别",
+        "监督"
+      ],
+      "influence": 85,
+      "credibility": 0.92
+    },
+    {
+      "rank": 8,
+      "ref": "S08",
+      "source_id": "N01",
+      "title": "市场监管总局部署秋季校园食品安全专项检查 严把原料采购关",
+      "url": "https://www.samr.gov.cn/xw/zj/202610/t20261024_01.html",
+      "source": "国家市场监督管理总局",
+      "author": "监管总局新闻宣传司",
+      "author_role": "监管部门",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "published_at": "2026-10-24T10:03:17+08:00",
+      "published_label": "2026-10-24 10:03",
+      "summary": "总局要求各地以学校食堂、校外供餐单位为重点，严查原料采购、加工制作和标签标识，对使用预制菜原料的要如实公示。",
+      "quote": "各地要对校外供餐单位使用的预包装菜肴原料开展重点检查，督促其如实标注并公示。",
+      "quote_position": "通知第2条",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "校园食品安全",
+        "专项检查",
+        "原料采购",
+        "标签标识"
+      ],
+      "influence": 84,
+      "credibility": 0.95
+    },
+    {
+      "rank": 9,
+      "ref": "S12",
+      "source_id": "D01",
+      "title": "12345工单汇总：校园餐相关投诉87件",
+      "url": "https://ops.yuqing.local/tickets/summary/20261020-01",
+      "source": "12345政务热线",
+      "author": "热线数据组",
+      "author_role": "监管部门",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "published_at": "2026-10-18T16:33:17+08:00",
+      "published_label": "2026-10-18 16:33",
+      "summary": "近两周受理校园餐类工单87件，其中预制菜质疑29件、菜品质量21件、价格18件、其他19件，办结率91%。",
+      "quote": "涉及预制菜的工单占比33%，较上月上升21个百分点。",
+      "quote_position": "周报第2页",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "12345",
+        "投诉",
+        "工单",
+        "办结率"
+      ],
+      "influence": 82,
+      "credibility": 0.92
+    },
+    {
+      "rank": 10,
+      "ref": "S19",
+      "source_id": "I01",
+      "title": "家长群流传的配餐包装照片 标签标注“复热即食”",
+      "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+      "source": "城市家长论坛",
+      "author": "家长用户 @小满妈妈",
+      "author_role": "家长",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "published_at": "2026-09-25T22:33:17+08:00",
+      "published_label": "2026-09-25 22:33",
+      "summary": "照片显示午餐包装背面标注“复热即食、加热15分钟”，与学校此前“现做现供”的说法不符，在多个家长群转发。",
+      "quote": "包装上明明写着复热即食，为什么学校说是现做的？",
+      "quote_position": "帖子配图说明",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "配图",
+        "复热即食",
+        "家长群",
+        "标签"
+      ],
+      "influence": 78,
+      "credibility": 0.72
+    }
+  ],
+  "conclusion": {
+    "summary": "综合 48 条来源与 5 项风险点，「预制菜进校园」舆情整体处于较高风险区间，负面情绪占 37.5%。讨论集中在监管部门、家长、媒体等群体，核心议题为预制菜、校园餐、陪餐、公示、净菜；标签标识与知情权争议持续发酵、短视频平台放大情绪化传播是当前最需要回应的风险点。近 7 天负面声量较前期回落 24.5 个百分点，情绪趋于缓和。",
+    "recommendations": [
+      {
+        "title": "优先处置：标签标识与知情权争议持续发酵",
+        "text": "由主管部门与责任主体在 24 小时内明确回应口径和处置时间表，优先公开公示信息不完整、包装标签与口径矛盾等可核验信息，避免以笼统表态替代事实说明。",
+        "refs": [
+          "S06",
+          "S19",
+          "S04"
+        ]
+      },
+      {
+        "title": "优先处置：短视频平台放大情绪化传播",
+        "text": "由主管部门与责任主体在 24 小时内明确回应口径和处置时间表，优先公开头部视频播放量 1200 万、情绪化标题等可核验信息，避免以笼统表态替代事实说明。",
+        "refs": [
+          "S01",
+          "S09",
+          "S03"
+        ]
+      },
+      {
+        "title": "统一信息发布节奏",
+        "text": "当前声量主要集中在新闻媒体，建议建立“事实通报 + 进展更新 + 问答口径”三段式发布机制，对不实信息在 4 小时内完成首次澄清，并保留可回溯的发布记录。",
+        "refs": [
+          "S08",
+          "S13"
+        ]
+      },
+      {
+        "title": "建立可核查的长效机制",
+        "text": "针对监管部门、家长、媒体的知情与参与诉求，将公示、查询、反馈固化为制度流程，定期公开整改进度并引入第三方核验，避免舆情回落即停止改进。",
+        "refs": [
+          "S08",
+          "S13",
+          "S20"
+        ]
+      }
+    ],
+    "confidence": 0.96,
+    "refs": [
+      "S08",
+      "S13",
+      "S20",
+      "S16"
+    ]
+  },
+  "keywords": [
+    {
+      "keyword": "预制菜",
+      "score": 14.12,
+      "count": 8
+    },
+    {
+      "keyword": "校园餐",
+      "score": 10.82,
+      "count": 6
+    },
+    {
+      "keyword": "陪餐",
+      "score": 10.25,
+      "count": 6
+    },
+    {
+      "keyword": "公示",
+      "score": 8.89,
+      "count": 5
+    },
+    {
+      "keyword": "净菜",
+      "score": 8.58,
+      "count": 5
+    },
+    {
+      "keyword": "中央厨房",
+      "score": 6.96,
+      "count": 4
+    },
+    {
+      "keyword": "留样",
+      "score": 6.88,
+      "count": 4
+    },
+    {
+      "keyword": "标签",
+      "score": 5.24,
+      "count": 3
+    },
+    {
+      "keyword": "监测",
+      "score": 5.23,
+      "count": 3
+    },
+    {
+      "keyword": "峰值",
+      "score": 3.7,
+      "count": 2
+    },
+    {
+      "keyword": "标签标识",
+      "score": 3.66,
+      "count": 2
+    },
+    {
+      "keyword": "学生不适",
+      "score": 3.63,
+      "count": 2
+    }
+  ],
+  "stats": {
+    "source_count": 48,
+    "type_counts": {
+      "news": 14,
+      "image": 8,
+      "video": 8,
+      "forum_post": 10,
+      "internal_data": 8
+    },
+    "type_coverage": 5,
+    "date_range": {
+      "earliest": "2026-09-25T20:33:17+08:00",
+      "latest": "2026-10-24T10:03:17+08:00"
+    },
+    "span_days": 28.6,
+    "avg_influence": 75.5,
+    "avg_credibility": 0.82,
+    "negative_ratio": 37.5,
+    "channel_top": "新闻媒体",
+    "risk_score": 55.0,
+    "risk_level": "较高",
+    "category": "食品安全"
+  },
+  "sources": [
+    {
+      "ref": "S01",
+      "id": "V01",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "央视新闻调查：预制菜如何进入校园餐桌",
+      "source": "央视新闻",
+      "author": "《新闻调查》栏目组",
+      "author_role": "媒体",
+      "published_at": "2026-10-14T16:33:17+08:00",
+      "published_label": "2026-10-14 16:33",
+      "url": "https://tv.cctv.com/2026/10/14/VIDE00120261014.shtml",
+      "summary": "30分钟调查片走访学校、供餐企业和监管部门，指出部分学校采购环节存在标签公示缺失、家长知情不足等问题，播出后登上热搜。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "新闻调查",
+        "预制菜",
+        "校园餐",
+        "热搜"
+      ],
+      "influence": 96,
+      "credibility": 0.93
+    },
+    {
+      "ref": "S02",
+      "id": "N02",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "教育部：预制菜不宜推广进校园 应审慎对待",
+      "source": "中国教育报",
+      "author": "记者 赵岩",
+      "author_role": "监管部门",
+      "published_at": "2026-10-15T16:33:17+08:00",
+      "published_label": "2026-10-15 16:33",
+      "url": "https://www.jyb.cn/rmtzgjyb/202610/t20261015_02.html",
+      "summary": "教育部相关负责人在新闻发布会上表示，鉴于预制菜尚无统一国家标准，不宜推广进校园，各地可结合实际制定管理细则。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "教育部",
+        "预制菜",
+        "校园餐",
+        "审慎"
+      ],
+      "influence": 94,
+      "credibility": 0.96
+    },
+    {
+      "ref": "S03",
+      "id": "F06",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "微博话题#预制菜进校园#阅读量3.2亿",
+      "source": "微博",
+      "author": "话题主持人",
+      "author_role": "媒体",
+      "published_at": "2026-10-15T02:33:17+08:00",
+      "published_label": "2026-10-15 02:33",
+      "url": "https://s.weibo.com/weibo?q=%23%E9%A2%84%E5%88%B6%E8%8F%9C%E8%BF%9B%E6%A0%A1%E5%9B%AD%23",
+      "summary": "话题在教育部表态后达到峰值，单小时讨论量12万条，情绪词云以“焦虑”“抵制”“公示”为主。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "微博话题",
+        "阅读量",
+        "峰值",
+        "情绪"
+      ],
+      "influence": 92,
+      "credibility": 0.65
+    },
+    {
+      "ref": "S04",
+      "id": "F03",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "家委会联名信：要求公开供餐企业和检测报告",
+      "source": "城市家长论坛",
+      "author": "三年级家委会",
+      "author_role": "家长",
+      "published_at": "2026-10-04T16:33:17+08:00",
+      "published_label": "2026-10-04 16:33",
+      "url": "https://bbs.city-parent.cn/thread/20261006/1421.html",
+      "summary": "联名信提出五项诉求：公开供应商、公示合同、每月检测、家长陪餐、建立听证机制，已有236位家长签名。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "联名信",
+        "家委会",
+        "五项诉求",
+        "签名"
+      ],
+      "influence": 90,
+      "credibility": 0.82
+    },
+    {
+      "ref": "S05",
+      "id": "F01",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "孩子说午餐是“料理包”，有图有真相",
+      "source": "城市家长论坛",
+      "author": "@小满妈妈",
+      "author_role": "家长",
+      "published_at": "2026-09-25T20:33:17+08:00",
+      "published_label": "2026-09-25 20:33",
+      "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+      "summary": "帖子称孩子连续三天午餐为复热菜肴，附包装照片和菜单对比，两天内回复近400条，成为本地舆情起点。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "料理包",
+        "家长爆料",
+        "午餐",
+        "舆情起点"
+      ],
+      "influence": 88,
+      "credibility": 0.7
+    },
+    {
+      "ref": "S06",
+      "id": "N05",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "记者调查：三所学校食堂公示信息不完整 供应商名单缺失",
+      "source": "澎湃新闻",
+      "author": "记者 周然",
+      "author_role": "媒体",
+      "published_at": "2026-10-05T16:33:17+08:00",
+      "published_label": "2026-10-05 16:33",
+      "url": "https://www.thepaper.cn/newsDetail_forward_29088112",
+      "summary": "记者走访发现，三所学校公示栏仅展示菜单，未公示供餐企业名称、食品经营许可证和近期检测报告，家长难以核验。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "公示",
+        "供应商",
+        "知情权",
+        "调查"
+      ],
+      "influence": 86,
+      "credibility": 0.88
+    },
+    {
+      "ref": "S07",
+      "id": "N11",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "多地推行“明厨亮灶” 家长扫码可看后厨直播",
+      "source": "央视新闻",
+      "author": "央视记者 马宁",
+      "author_role": "媒体",
+      "published_at": "2026-10-21T16:33:17+08:00",
+      "published_label": "2026-10-21 16:33",
+      "url": "https://news.cctv.com/2026/10/22/ARTI20261022SX001.shtml",
+      "summary": "多地学校后厨接入视频平台，家长扫码即可查看加工过程，部分地区还将AI识别未戴口罩、鼠患等风险并自动告警。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "明厨亮灶",
+        "直播",
+        "AI识别",
+        "监督"
+      ],
+      "influence": 85,
+      "credibility": 0.92
+    },
+    {
+      "ref": "S08",
+      "id": "N01",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "市场监管总局部署秋季校园食品安全专项检查 严把原料采购关",
+      "source": "国家市场监督管理总局",
+      "author": "监管总局新闻宣传司",
+      "author_role": "监管部门",
+      "published_at": "2026-10-24T10:03:17+08:00",
+      "published_label": "2026-10-24 10:03",
+      "url": "https://www.samr.gov.cn/xw/zj/202610/t20261024_01.html",
+      "summary": "总局要求各地以学校食堂、校外供餐单位为重点，严查原料采购、加工制作和标签标识，对使用预制菜原料的要如实公示。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "校园食品安全",
+        "专项检查",
+        "原料采购",
+        "标签标识"
+      ],
+      "influence": 84,
+      "credibility": 0.95
+    },
+    {
+      "ref": "S09",
+      "id": "V02",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "抖音博主探访中央厨房 播放量破千万",
+      "source": "抖音",
+      "author": "博主 @老陈探店",
+      "author_role": "媒体",
+      "published_at": "2026-09-27T14:33:17+08:00",
+      "published_label": "2026-09-27 14:33",
+      "url": "https://www.douyin.com/video/7410033882",
+      "summary": "博主以第一视角拍摄中央厨房净菜加工与配送，视频播放量1200万，评论区围绕“净菜还是料理包”激烈争论。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "探店",
+        "中央厨房",
+        "播放量",
+        "争论"
+      ],
+      "influence": 84,
+      "credibility": 0.58
+    },
+    {
+      "ref": "S10",
+      "id": "N12",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "网传学生餐后不适 官方通报：未检出食源性致病因素",
+      "source": "市卫生健康委员会",
+      "author": "市卫健委应急办",
+      "author_role": "监管部门",
+      "published_at": "2026-10-17T16:33:17+08:00",
+      "published_label": "2026-10-17 16:33",
+      "url": "https://www.city.gov.cn/wsjkw/tzgg/202610/t20261018_12.html",
+      "summary": "针对网传某小学多名学生餐后不适，疾控部门采集留样和病例样本，未检出致病菌，初步判断为季节性肠胃炎聚集，已排除食源性因素。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "学生不适",
+        "留样",
+        "检测",
+        "谣言"
+      ],
+      "influence": 83,
+      "credibility": 0.93
+    },
+    {
+      "ref": "S11",
+      "id": "N09",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "校园餐抽检结果公布：合格率98.6% 标签标识待规范",
+      "source": "市疾病预防控制中心",
+      "author": "市疾控中心食安所",
+      "author_role": "监管部门",
+      "published_at": "2026-10-19T16:33:17+08:00",
+      "published_label": "2026-10-19 16:33",
+      "url": "https://www.cdc-city.gov.cn/xxgk/jc/202610/t20261020_09.html",
+      "summary": "本轮抽检覆盖156批次校园餐原料及成品，微生物指标全部合格，2批次预包装原料存在生产日期标注不清问题，已责令下架。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "抽检",
+        "合格率",
+        "标签标识",
+        "校园餐"
+      ],
+      "influence": 82,
+      "credibility": 0.95
+    },
+    {
+      "ref": "S12",
+      "id": "D01",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "12345工单汇总：校园餐相关投诉87件",
+      "source": "12345政务热线",
+      "author": "热线数据组",
+      "author_role": "监管部门",
+      "published_at": "2026-10-18T16:33:17+08:00",
+      "published_label": "2026-10-18 16:33",
+      "url": "https://ops.yuqing.local/tickets/summary/20261020-01",
+      "summary": "近两周受理校园餐类工单87件，其中预制菜质疑29件、菜品质量21件、价格18件、其他19件，办结率91%。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "12345",
+        "投诉",
+        "工单",
+        "办结率"
+      ],
+      "influence": 82,
+      "credibility": 0.92
+    },
+    {
+      "ref": "S13",
+      "id": "F10",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "家长维权群：已有236位家长接龙要求听证",
+      "source": "微信家长群",
+      "author": "维权群管理员",
+      "author_role": "家长",
+      "published_at": "2026-10-24T08:33:17+08:00",
+      "published_label": "2026-10-24 08:33",
+      "url": "https://bbs.city-parent.cn/thread/20261024/1530.html",
+      "summary": "群内接龙持续更新，家长计划向区教育局递交书面材料，并邀请律师提供信息公开申请指导。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "维权群",
+        "接龙",
+        "听证",
+        "信息公开"
+      ],
+      "influence": 80,
+      "credibility": 0.62
+    },
+    {
+      "ref": "S14",
+      "id": "V05",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "网传学生不适视频 校方公布监控与检测结果",
+      "source": "抖音",
+      "author": "账号 @本地热点",
+      "author_role": "媒体",
+      "published_at": "2026-10-17T22:33:17+08:00",
+      "published_label": "2026-10-17 22:33",
+      "url": "https://www.douyin.com/video/7415566210",
+      "summary": "视频称某小学多名学生呕吐，校方随后公布教室监控和疾控检测结果，说明为季节性肠胃炎，视频被平台标注“信息存疑”。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "学生不适",
+        "监控",
+        "检测",
+        "存疑"
+      ],
+      "influence": 80,
+      "credibility": 0.55
+    },
+    {
+      "ref": "S15",
+      "id": "N08",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "专家解读：中央厨房净菜与预制菜不是一回事",
+      "source": "中国新闻网",
+      "author": "记者 林杉",
+      "author_role": "专家",
+      "published_at": "2026-10-13T16:33:17+08:00",
+      "published_label": "2026-10-13 16:33",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10245678.shtml",
+      "summary": "食品安全专家指出，净菜是经清洗切配的生鲜原料，预制菜是经工业化预加工、需复热的成品或半成品，两者在监管口径上应区别对待。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "净菜",
+        "预制菜",
+        "定义",
+        "标准"
+      ],
+      "influence": 80,
+      "credibility": 0.91
+    },
+    {
+      "ref": "S16",
+      "id": "N13",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "省教育厅：建立家长陪餐和供应商公示制度",
+      "source": "某省教育厅",
+      "author": "省教育厅体卫艺处",
+      "author_role": "监管部门",
+      "published_at": "2026-10-23T10:33:17+08:00",
+      "published_label": "2026-10-23 10:33",
+      "url": "https://www.xxedu.gov.cn/zwgk/tzgg/202610/t20261023_13.html",
+      "summary": "省教育厅要求全省学校建立家长陪餐预约、供应商信息公示、检测报告月度公开三项制度，并将落实情况纳入年度考核。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "陪餐",
+        "公示",
+        "制度",
+        "考核"
+      ],
+      "influence": 79,
+      "credibility": 0.95
+    },
+    {
+      "ref": "S17",
+      "id": "D03",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "内部舆情周报：话题传播峰值出现在教育部表态后",
+      "source": "舆情监测中心",
+      "author": "值班分析师",
+      "author_role": "内部",
+      "published_at": "2026-10-20T02:33:17+08:00",
+      "published_label": "2026-10-20 02:33",
+      "url": "https://ops.yuqing.local/reports/weekly/20261020-03",
+      "summary": "周报记录三个传播峰值：短视频探店、央视调查、教育部表态，其中教育部表态后6小时声量增长4.8倍。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "舆情周报",
+        "峰值",
+        "传播",
+        "监测"
+      ],
+      "influence": 78,
+      "credibility": 0.94
+    },
+    {
+      "ref": "S18",
+      "id": "N03",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "市教育局回应“预制菜进校园”：允许净菜配送 严禁预制菜",
+      "source": "某市教育局",
+      "author": "市教育局办公室",
+      "author_role": "监管部门",
+      "published_at": "2026-09-29T18:33:17+08:00",
+      "published_label": "2026-09-29 18:33",
+      "url": "https://www.xxjy.gov.cn/zwgk/tzgg/202610/t20261001_03.html",
+      "summary": "市教育局明确校园餐食材应以新鲜原料为主，中央厨房可配送净菜，不得使用复热即食类预制菜肴，并要求一周内完成自查。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "市教育局",
+        "净菜",
+        "预制菜",
+        "自查"
+      ],
+      "influence": 78,
+      "credibility": 0.93
+    },
+    {
+      "ref": "S19",
+      "id": "I01",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "家长群流传的配餐包装照片 标签标注“复热即食”",
+      "source": "城市家长论坛",
+      "author": "家长用户 @小满妈妈",
+      "author_role": "家长",
+      "published_at": "2026-09-25T22:33:17+08:00",
+      "published_label": "2026-09-25 22:33",
+      "url": "https://bbs.city-parent.cn/thread/20260926/1183.html",
+      "summary": "照片显示午餐包装背面标注“复热即食、加热15分钟”，与学校此前“现做现供”的说法不符，在多个家长群转发。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "配图",
+        "复热即食",
+        "家长群",
+        "标签"
+      ],
+      "influence": 78,
+      "credibility": 0.72
+    },
+    {
+      "ref": "S20",
+      "id": "N14",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "舆情观察：校园餐话题热度回落 信任修复仍需时间",
+      "source": "人民网舆情数据中心",
+      "author": "舆情分析师 罗清",
+      "author_role": "媒体",
+      "published_at": "2026-10-24T02:33:17+08:00",
+      "published_label": "2026-10-24 02:33",
+      "url": "http://yuqing.people.com.cn/n1/2026/1024/c209043-40018888.html",
+      "summary": "监测显示相关话题声量较峰值下降62%，负面情绪占比由48%降至37%，家长关注点从“是否预制”转向“是否公开”。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "舆情",
+        "热度",
+        "信任修复",
+        "监测"
+      ],
+      "influence": 77,
+      "credibility": 0.88
+    },
+    {
+      "ref": "S21",
+      "id": "V07",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "专家访谈：预制菜国标缺失下的校园选择",
+      "source": "澎湃新闻",
+      "author": "澎湃新闻视频部",
+      "author_role": "专家",
+      "published_at": "2026-10-20T22:33:17+08:00",
+      "published_label": "2026-10-20 22:33",
+      "url": "https://www.thepaper.cn/newsDetail_forward_29112233",
+      "summary": "三位专家讨论预制菜定义、校园餐采购和学生知情权，建议建立校园餐原料负面清单和分类公示制度。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "专家访谈",
+        "国家标准",
+        "负面清单",
+        "公示"
+      ],
+      "influence": 76,
+      "credibility": 0.9
+    },
+    {
+      "ref": "S22",
+      "id": "N07",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "家长开放日走进配餐车间 现场查看检测报告",
+      "source": "人民网",
+      "author": "记者 何苗",
+      "author_role": "学校",
+      "published_at": "2026-10-12T04:33:17+08:00",
+      "published_label": "2026-10-12 04:33",
+      "url": "http://edu.people.com.cn/n1/2026/1017/c1053-40012345.html",
+      "summary": "20名家长代表走进配餐车间和学校后厨，查看食材验收台账、留样冰箱与快检记录，校方承诺每周公示菜单和检测结果。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "家长开放日",
+        "陪餐",
+        "检测报告",
+        "透明"
+      ],
+      "influence": 76,
+      "credibility": 0.9
+    },
+    {
+      "ref": "S23",
+      "id": "I08",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "维权群聊天记录截图：要求公开供应商名单",
+      "source": "城市家长论坛",
+      "author": "家长群管理员",
+      "author_role": "家长",
+      "published_at": "2026-10-05T02:33:17+08:00",
+      "published_label": "2026-10-05 02:33",
+      "url": "https://bbs.city-parent.cn/thread/20261006/1421.html",
+      "summary": "截图显示维权群已有236位家长接龙，要求学校公开供餐企业、采购合同和近三个月检测报告，并申请召开听证会。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "维权群",
+        "接龙",
+        "供应商名单",
+        "听证会"
+      ],
+      "influence": 76,
+      "credibility": 0.7
+    },
+    {
+      "ref": "S24",
+      "id": "V03",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "后厨直播回放：配餐全流程12小时",
+      "source": "本地融媒体中心",
+      "author": "融媒体记者 田甜",
+      "author_role": "学校",
+      "published_at": "2026-10-21T22:33:17+08:00",
+      "published_label": "2026-10-21 22:33",
+      "url": "https://www.cityrm.cn/live/202610/kitchen-12h.shtml",
+      "summary": "直播从凌晨4点食材验收持续到下午供餐结束，累计观看42万人次，弹幕集中询问油品来源和留样制度。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "后厨直播",
+        "全流程",
+        "留样",
+        "观看量"
+      ],
+      "influence": 75,
+      "credibility": 0.87
+    },
+    {
+      "ref": "S25",
+      "id": "D08",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "家长满意度调查：满意62% 不满意21% 中立17%",
+      "source": "市教育局",
+      "author": "督导室",
+      "author_role": "内部",
+      "published_at": "2026-10-23T04:33:17+08:00",
+      "published_label": "2026-10-23 04:33",
+      "url": "https://ops.yuqing.local/survey/20261023-8432",
+      "summary": "回收有效问卷8432份，满意62%、中立17%、不满意21%；不满意原因集中在公示不及时和陪餐预约难。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "满意度",
+        "问卷",
+        "公示",
+        "陪餐"
+      ],
+      "influence": 74,
+      "credibility": 0.93
+    },
+    {
+      "ref": "S26",
+      "id": "F09",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "论坛投票：你支持预制菜进校园吗？",
+      "source": "城市家长论坛",
+      "author": "版主 @教育观察",
+      "author_role": "家长",
+      "published_at": "2026-10-20T12:33:17+08:00",
+      "published_label": "2026-10-20 12:33",
+      "url": "https://bbs.city-parent.cn/thread/20261021/1495.html",
+      "summary": "为期三天的投票吸引1.2万人参与，76%选择“不支持”，15%选择“视公示情况而定”，9%选择“支持”。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "投票",
+        "不支持",
+        "公示",
+        "样本"
+      ],
+      "influence": 74,
+      "credibility": 0.6
+    },
+    {
+      "ref": "S27",
+      "id": "D05",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "校园食安抽检记录：抽检156批次 合格154批次",
+      "source": "市疾病预防控制中心",
+      "author": "食安所",
+      "author_role": "监管部门",
+      "published_at": "2026-10-19T20:33:17+08:00",
+      "published_label": "2026-10-19 20:33",
+      "url": "https://ops.yuqing.local/lab/records/20261020-156",
+      "summary": "抽检覆盖米面油、畜禽肉、蔬菜、预包装菜肴等品类，2批次标签不合格，已通报属地市场监管所处理。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "抽检记录",
+        "合格",
+        "标签",
+        "处置"
+      ],
+      "influence": 74,
+      "credibility": 0.96
+    },
+    {
+      "ref": "S28",
+      "id": "N06",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "供餐企业开放中央厨房：从净菜到餐桌全程可追溯",
+      "source": "新华网",
+      "author": "记者 孙悦",
+      "author_role": "企业",
+      "published_at": "2026-10-09T04:33:17+08:00",
+      "published_label": "2026-10-09 04:33",
+      "url": "https://www.news.cn/2026-10/13/c_1129318806.htm",
+      "summary": "绿源餐饮开放日展示净菜清洗、切配、冷链配送流程，企业称校园餐不使用复热料理包，每批次留样并接入追溯平台。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "中央厨房",
+        "净菜",
+        "追溯",
+        "开放日"
+      ],
+      "influence": 74,
+      "credibility": 0.82
+    },
+    {
+      "ref": "S29",
+      "id": "I06",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "短视频封面“孩子的午餐到底安不安全”",
+      "source": "抖音",
+      "author": "账号 @校园餐观察",
+      "author_role": "媒体",
+      "published_at": "2026-09-27T16:33:17+08:00",
+      "published_label": "2026-09-27 16:33",
+      "url": "https://www.douyin.com/video/7412233001",
+      "summary": "封面使用学生餐盘特写和醒目标题，视频获赞86万，评论区大量家长晒出本地学校午餐照片。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "短视频",
+        "封面",
+        "校园餐",
+        "焦虑"
+      ],
+      "influence": 74,
+      "credibility": 0.6
+    },
+    {
+      "ref": "S30",
+      "id": "I05",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "抽检报告截图：菌落总数合格，标签缺少生产日期",
+      "source": "市疾病预防控制中心",
+      "author": "检测报告截图",
+      "author_role": "监管部门",
+      "published_at": "2026-10-19T18:33:17+08:00",
+      "published_label": "2026-10-19 18:33",
+      "url": "https://www.cdc-city.gov.cn/xxgk/jc/202610/report-156.jpg",
+      "summary": "报告截图显示菌落总数、大肠菌群等指标合格，但两批次预包装原料的标签未标注生产日期，被判定为标识不合格。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "抽检报告",
+        "菌落总数",
+        "标签",
+        "生产日期"
+      ],
+      "influence": 72,
+      "credibility": 0.94
+    },
+    {
+      "ref": "S31",
+      "id": "D04",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "供应商台账：本市校园餐供餐企业23家 中央厨房6家",
+      "source": "市教育局后勤中心",
+      "author": "后勤管理科",
+      "author_role": "内部",
+      "published_at": "2026-10-10T12:33:17+08:00",
+      "published_label": "2026-10-10 12:33",
+      "url": "https://ops.yuqing.local/assets/suppliers/20261018",
+      "summary": "台账显示全市23家校园餐供餐企业中6家建有中央厨房，绿源餐饮覆盖31所学校，鲜达供应链覆盖12所。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "供应商台账",
+        "中央厨房",
+        "覆盖率",
+        "供餐企业"
+      ],
+      "influence": 72,
+      "credibility": 0.95
+    },
+    {
+      "ref": "S32",
+      "id": "N04",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "省教育厅部署校园食品安全专项检查 覆盖中小学幼儿园",
+      "source": "某省教育厅",
+      "author": "省教育厅体卫艺处",
+      "author_role": "监管部门",
+      "published_at": "2026-10-02T16:33:17+08:00",
+      "published_label": "2026-10-02 16:33",
+      "url": "https://www.xxedu.gov.cn/zwgk/tzgg/202610/t20261006_04.html",
+      "summary": "专项检查为期一个月，覆盖全省中小学、幼儿园及校外供餐单位，重点检查供应商资质、留样制度和明厨亮灶运行情况。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "省教育厅",
+        "专项检查",
+        "明厨亮灶",
+        "留样"
+      ],
+      "influence": 72,
+      "credibility": 0.94
+    },
+    {
+      "ref": "S33",
+      "id": "F02",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "家长群转帖：我们学校也吃预制菜吗？",
+      "source": "微信家长群",
+      "author": "群成员转发",
+      "author_role": "家长",
+      "published_at": "2026-09-30T04:33:17+08:00",
+      "published_label": "2026-09-30 04:33",
+      "url": "https://bbs.city-parent.cn/thread/20261002/1205.html",
+      "summary": "转帖在12个家长群扩散，附带“如何辨别料理包”的图片指南，部分家长开始要求学校提供采购清单。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "家长群",
+        "转帖",
+        "辨别",
+        "采购清单"
+      ],
+      "influence": 72,
+      "credibility": 0.55
+    },
+    {
+      "ref": "S34",
+      "id": "D02",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "客服热线记录：家长咨询“预制菜”关键词132次",
+      "source": "市教育局客服中心",
+      "author": "客服班组",
+      "author_role": "监管部门",
+      "published_at": "2026-10-19T06:33:17+08:00",
+      "published_label": "2026-10-19 06:33",
+      "url": "https://ops.yuqing.local/calls/summary/20261020-02",
+      "summary": "热线记录显示家长最关心“孩子学校是否使用预制菜”“如何查看检测报告”“能否预约陪餐”三类问题。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "客服",
+        "咨询",
+        "预制菜",
+        "陪餐"
+      ],
+      "influence": 70,
+      "credibility": 0.9
+    },
+    {
+      "ref": "S35",
+      "id": "I04",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "家长开放日现场：家长查看食材溯源台账",
+      "source": "人民网",
+      "author": "记者 何苗",
+      "author_role": "家长",
+      "published_at": "2026-10-12T06:33:17+08:00",
+      "published_label": "2026-10-12 06:33",
+      "url": "https://www.people.com.cn/n1/2026/1017/c1001-photo04.html",
+      "summary": "家长代表在配餐车间翻阅进货台账，用手机扫描二维码核对批次检测报告，现场提出12条改进建议。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "开放日",
+        "溯源",
+        "台账",
+        "家长"
+      ],
+      "influence": 70,
+      "credibility": 0.88
+    },
+    {
+      "ref": "S36",
+      "id": "V04",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "地方台《民生直通车》：家长与教育局面对面",
+      "source": "市广播电视台",
+      "author": "《民生直通车》栏目",
+      "author_role": "监管部门",
+      "published_at": "2026-10-09T16:33:17+08:00",
+      "published_label": "2026-10-09 16:33",
+      "url": "https://www.citytv.cn/ms/202610/face-to-face.shtml",
+      "summary": "节目邀请12位家长代表与教育局、市场监管局对话，现场回应公示不全、陪餐预约难等问题，承诺两周内公布整改清单。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "电视问政",
+        "面对面",
+        "整改清单",
+        "家长"
+      ],
+      "influence": 70,
+      "credibility": 0.85
+    },
+    {
+      "ref": "S37",
+      "id": "F05",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "知乎问题：如何看预制菜进校园？",
+      "source": "知乎",
+      "author": "问题发起人 @南山",
+      "author_role": "家长",
+      "published_at": "2026-10-08T16:33:17+08:00",
+      "published_label": "2026-10-08 16:33",
+      "url": "https://www.zhihu.com/question/621880334",
+      "summary": "问题获得2.3万关注、1800余条回答，高赞回答聚焦知情权、采购透明度和学生营养，而非简单反对预制菜。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "知乎",
+        "高赞",
+        "知情权",
+        "营养"
+      ],
+      "influence": 70,
+      "credibility": 0.72
+    },
+    {
+      "ref": "S38",
+      "id": "D06",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "舆情值班日志：累计监测到相关短视频412条",
+      "source": "舆情监测中心",
+      "author": "夜班值班员",
+      "author_role": "内部",
+      "published_at": "2026-10-21T08:33:17+08:00",
+      "published_label": "2026-10-21 08:33",
+      "url": "https://ops.yuqing.local/duty/logs/20261022",
+      "summary": "值班日志统计短视频412条、新闻186篇、论坛帖93条，头部5条视频贡献了62%的播放量。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "值班日志",
+        "短视频",
+        "播放量",
+        "监测"
+      ],
+      "influence": 68,
+      "credibility": 0.9
+    },
+    {
+      "ref": "S39",
+      "id": "N10",
+      "source_type": "news",
+      "source_type_label": "新闻媒体",
+      "title": "行业协会就校园餐应用团体标准公开征求意见",
+      "source": "中国烹饪协会",
+      "author": "协会标准化工作委员会",
+      "author_role": "行业协会",
+      "published_at": "2026-10-20T16:33:17+08:00",
+      "published_label": "2026-10-20 16:33",
+      "url": "https://www.ccas.com.cn/standard/202610/t20261021_01.html",
+      "summary": "团体标准拟对校园餐原料分类、预制菜使用边界、标签公示和复热工艺提出规范，公开征求意见为期30天。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "团体标准",
+        "预制菜",
+        "校园餐",
+        "征求意见"
+      ],
+      "influence": 68,
+      "credibility": 0.86
+    },
+    {
+      "ref": "S40",
+      "id": "V06",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "B站UP主实测校园餐：营养搭配达标吗",
+      "source": "哔哩哔哩",
+      "author": "UP主 @营养师小柯",
+      "author_role": "专家",
+      "published_at": "2026-10-16T08:33:17+08:00",
+      "published_label": "2026-10-16 08:33",
+      "url": "https://www.bilibili.com/video/BV1cP4y1K7xQ",
+      "summary": "UP主按学生餐营养指南测算热量、蛋白质和钠含量，认为菜品搭配基本达标，但油盐偏高、蔬菜种类单一。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "营养测评",
+        "热量",
+        "钠含量",
+        "校园餐"
+      ],
+      "influence": 68,
+      "credibility": 0.82
+    },
+    {
+      "ref": "S41",
+      "id": "D07",
+      "source_type": "internal_data",
+      "source_type_label": "内部数据",
+      "title": "投诉分类统计：菜品口味/温度占41%，预制菜质疑占33%",
+      "source": "市教育局后勤中心",
+      "author": "投诉分析组",
+      "author_role": "内部",
+      "published_at": "2026-10-22T12:33:17+08:00",
+      "published_label": "2026-10-22 12:33",
+      "url": "https://ops.yuqing.local/complaints/stats/20261023",
+      "summary": "分类统计显示，菜品口味与温度问题占41%，预制菜质疑占33%，分量不足占14%，服务态度占12%。",
+      "sentiment": "negative",
+      "sentiment_label": "负向",
+      "keywords": [
+        "投诉分类",
+        "口味",
+        "温度",
+        "预制菜"
+      ],
+      "influence": 66,
+      "credibility": 0.91
+    },
+    {
+      "ref": "S42",
+      "id": "F07",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "小红书笔记：陪餐记录第7天 菜品实拍",
+      "source": "小红书",
+      "author": "@陪餐日记",
+      "author_role": "家长",
+      "published_at": "2026-10-22T06:33:17+08:00",
+      "published_label": "2026-10-22 06:33",
+      "url": "https://www.xiaohongshu.com/explore/66f7b3c1000000001e02e9a1",
+      "summary": "笔记连续记录七天陪餐体验，对比菜单与实际菜品，点赞1.2万，评论区多询问如何预约陪餐。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "陪餐记录",
+        "实拍",
+        "预约",
+        "体验"
+      ],
+      "influence": 66,
+      "credibility": 0.74
+    },
+    {
+      "ref": "S43",
+      "id": "I03",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "中央厨房净菜加工线现场图",
+      "source": "绿源餐饮",
+      "author": "企业开放日素材",
+      "author_role": "企业",
+      "published_at": "2026-10-09T10:33:17+08:00",
+      "published_label": "2026-10-09 10:33",
+      "url": "https://www.lvyuan-catering.cn/news/202610/open-day-03.jpg",
+      "summary": "图片展示净菜清洗、切配、金属探测和冷链装箱流程，车间温度显示为8℃，操作人员穿戴全套防护。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "中央厨房",
+        "净菜",
+        "冷链",
+        "金属探测"
+      ],
+      "influence": 66,
+      "credibility": 0.8
+    },
+    {
+      "ref": "S44",
+      "id": "I07",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "校园餐菜品实拍：两荤一素+牛奶",
+      "source": "小红书",
+      "author": "用户 @陪餐日记",
+      "author_role": "家长",
+      "published_at": "2026-10-22T04:33:17+08:00",
+      "published_label": "2026-10-22 04:33",
+      "url": "https://www.xiaohongshu.com/explore/66f7a1b2000000001e02c7d8",
+      "summary": "家长陪餐时拍摄的午餐实拍，两荤一素配牛奶和水果，标注了菜品名称、克重和营养师签字。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "陪餐",
+        "菜品实拍",
+        "营养",
+        "克重"
+      ],
+      "influence": 64,
+      "credibility": 0.78
+    },
+    {
+      "ref": "S45",
+      "id": "V08",
+      "source_type": "video",
+      "source_type_label": "视频内容",
+      "title": "家长会现场录音片段：校方承诺每周公示菜单",
+      "source": "城市家长论坛",
+      "author": "家长用户 @六年级家长",
+      "author_role": "学校",
+      "published_at": "2026-10-23T00:33:17+08:00",
+      "published_label": "2026-10-23 00:33",
+      "url": "https://bbs.city-parent.cn/thread/20261020/1502.html",
+      "summary": "录音中校长承诺每周五公示下周菜单、供应商和快检结果，并开放家长陪餐预约，现场家长鼓掌但要求写入书面制度。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "家长会",
+        "菜单公示",
+        "陪餐",
+        "承诺"
+      ],
+      "influence": 62,
+      "credibility": 0.75
+    },
+    {
+      "ref": "S46",
+      "id": "I02",
+      "source_type": "image",
+      "source_type_label": "图片素材",
+      "title": "学校食堂公示栏照片：供应商资质与检测报告",
+      "source": "阳光小学",
+      "author": "校务公开栏",
+      "author_role": "学校",
+      "published_at": "2026-10-12T16:33:17+08:00",
+      "published_label": "2026-10-12 16:33",
+      "url": "https://www.yangguang-school.edu.cn/notice/202610/photo-02.jpg",
+      "summary": "公示栏张贴供餐企业食品经营许可证、从业人员健康证和最近一期快检报告，家长可扫码查看电子版。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "公示栏",
+        "资质",
+        "检测报告",
+        "扫码"
+      ],
+      "influence": 62,
+      "credibility": 0.85
+    },
+    {
+      "ref": "S47",
+      "id": "F04",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "贴吧讨论：中央厨房净菜算不算预制菜",
+      "source": "百度贴吧",
+      "author": "@食安搬砖人",
+      "author_role": "专家",
+      "published_at": "2026-10-07T04:33:17+08:00",
+      "published_label": "2026-10-07 04:33",
+      "url": "https://tieba.baidu.com/p/8621004471",
+      "summary": "帖子从加工工艺、保质期和监管分类三个维度讨论净菜与预制菜边界，跟帖引用农业农村部和市场监管总局的不同口径。",
+      "sentiment": "neutral",
+      "sentiment_label": "中性",
+      "keywords": [
+        "净菜",
+        "预制菜",
+        "定义",
+        "监管口径"
+      ],
+      "influence": 60,
+      "credibility": 0.68
+    },
+    {
+      "ref": "S48",
+      "id": "F08",
+      "source_type": "forum_post",
+      "source_type_label": "论坛帖子",
+      "title": "教师发帖：每天验收食材 压力很大但愿意公开",
+      "source": "城市家长论坛",
+      "author": "@四年级班主任",
+      "author_role": "学校",
+      "published_at": "2026-10-18T10:33:17+08:00",
+      "published_label": "2026-10-18 10:33",
+      "url": "https://bbs.city-parent.cn/thread/20261018/1478.html",
+      "summary": "教师描述每日晨检、称重、留样流程，坦言公示压力大，但认为公开能减少误解，帖子获家长正面回应。",
+      "sentiment": "positive",
+      "sentiment_label": "正向",
+      "keywords": [
+        "教师",
+        "验收",
+        "留样",
+        "公开"
+      ],
+      "influence": 58,
+      "credibility": 0.78
+    }
+  ],
+  "paths": {
+    "markdown": "reports/RPT-20261024-163317-D793/report.md",
+    "json": "reports/RPT-20261024-163317-D793/report.json",
+    "meta": "reports/RPT-20261024-163317-D793/meta.json",
+    "search": "reports/RPT-20261024-163317-D793/search.json",
+    "graph": "graphs/RPT-20261024-163317-D793/graph.json"
+  },
+  "graph_summary": {
+    "report_id": "RPT-20261024-163317-D793",
+    "topic": "预制菜进校园",
+    "node_count": 51,
+    "edge_count": 91,
+    "type_counts": {
+      "topic": 1,
+      "brand": 2,
+      "event": 8,
+      "person": 5,
+      "org": 10,
+      "media": 7,
+      "source": 18
+    },
+    "relation_counts": {
+      "contains": 8,
+      "spread_by": 7,
+      "covers": 3,
+      "mentions": 18,
+      "reports": 8,
+      "discusses": 4,
+      "supports": 2,
+      "illustrates": 1,
+      "involves": 16,
+      "published": 9,
+      "affiliated_with": 4,
+      "participates_in": 1,
+      "operated_by": 2,
+      "regulates": 1,
+      "supervises": 1,
+      "administers": 1,
+      "inspects": 1,
+      "standardizes": 1,
+      "cooperates_with": 1,
+      "related_brand": 2
+    },
+    "graph_path": "graphs/RPT-20261024-163317-D793/graph.json",
+    "created_at": "2026-10-24T16:33:17+08:00",
+    "top_node": {
+      "id": "TOPIC",
+      "label": "预制菜进校园",
+      "degree": 37
+    }
+  }
+}

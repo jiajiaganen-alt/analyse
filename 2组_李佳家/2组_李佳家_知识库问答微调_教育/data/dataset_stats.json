@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-10-24",
+  "seed": 20260515,
+  "system_prompt": "你是「知行学堂」在线教育平台的知识库问答助手。你只能依据用户提供的【资料】回答问题，并在答案中标注依据条款编号（格式如 [KB-EDU-002-2.3]）；当资料不足、资料无关或资料互相冲突时，必须明确说明无法回答并指出缺失信息，不得编造资料中没有的事实、数字和政策。",
+  "knowledge": {
+    "docs": 6,
+    "clauses": 37
+  },
+  "splits": {
+    "train": 420,
+    "validation": 60,
+    "test": 80,
+    "total": 560
+  },
+  "capabilities": [
+    {
+      "key": "term_format",
+      "name": "行业术语与格式适配",
+      "train": 84,
+      "validation": 12,
+      "test": 16,
+      "total": 112
+    },
+    {
+      "key": "faithful",
+      "name": "检索内容忠实回答",
+      "train": 84,
+      "validation": 12,
+      "test": 16,
+      "total": 112
+    },
+    {
+      "key": "multi_snippet",
+      "name": "多片段信息整合",
+      "train": 84,
+      "validation": 12,
+      "test": 16,
+      "total": 112
+    },
+    {
+      "key": "citation",
+      "name": "证据引用与出处标注",
+      "train": 84,
+      "validation": 12,
+      "test": 16,
+      "total": 112
+    },
+    {
+      "key": "refusal",
+      "name": "资料不足拒答",
+      "train": 84,
+      "validation": 12,
+      "test": 16,
+      "total": 112
+    }
+  ],
+  "answerable_ratio": 0.8,
+  "context_chars": {
+    "mean": 470.0,
+    "max": 607,
+    "min": 283
+  },
+  "answer_chars": {
+    "mean": 155.3,
+    "max": 216,
+    "min": 76
+  },
+  "refusal_types": {
+    "missing": 100,
+    "conflict": 12
+  },
+  "refusal_types_test": {
+    "missing": 13,
+    "conflict": 3
+  }
+}
